@@ -1,0 +1,268 @@
+@import url('variables.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-paragraph);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gutter);
+}
+
+header {
+  display: grid;
+  grid-column: span var(--columns);
+  justify-content: center;
+  border-color: pink;
+  border-style: solid;
+}
+
+.wtf {
+  border-color: pink;
+  border-style: solid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+
+}
+
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 0% 5%;
+  display: flex;
+  z-index: 999;
+  justify-content: space-between;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+
+/* Background for menu when passing header */
+.nav-bg {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 997;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Hide it behind header */
+  margin-top: -70px;
+
+  grid-column: span var(--columns);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+nav ul li a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+header {
+  grid-column: span var(--columns);
+  background-image: url("https://as2.ftcdn.net/v2/jpg/02/48/62/27/1000_F_248622787_LWwD9sNaygG6mrZVsPqGFvoTG5bwZSVk.jpg");
+  background-size: cover;
+  min-height: 400px;
+  z-index: 998;
+  /* Temp */
+}
+
+.top-container {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+
+}
+
+main {
+  grid-column: span var(--columns);
+}
+
+.container {
+  padding: 0 var(--gutter)
+}
+
+#content-stats {
+  font-family: var(--font-heading);
+  padding: calc(var(--spacer)*6) 0;
+}
+
+#content-stats h3 {
+  margin: 0;
+}
+
+.content-stats-data {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* ----- COFFEE CONTENT START --- */
+
+#content-coffee {
+  grid-column: span var(--columns);
+  display: flex;
+  flex-flow: row wrap;
+  background-image: url("https://cdn.abicart.com/shop/images/24557807-origpic-942c6e/26809/art9/h7807/32109271_Image_CAN.jpg");
+  background-size: cover;
+  min-height: 300px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.coffee-text {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+
+
+/* ----- COFFEE CONTENT END --- */
+
+/* ----- GALLERY START ------ */
+
+#gallery {
+  grid-column: span var(--columns);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#gallery img {
+  max-width: 100%;
+}
+
+.gallery-img {
+  grid-column: span var(--columns);
+}
+
+.gallery-img :last-child {
+  object-fit: cover;
+}
+
+/* ------ GALLERY END ----- */
+
+/*----- FOOTER START-----*/
+footer {
+  grid-column: span var(--columns);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-address,
+.footer-hours,
+.footer-mail {
+  padding: calc(var(--spacer)*6) 0;
+  color: var(--gray)
+}
+
+.footer-address li:first-child,
+.footer-hours li:first-child,
+.footer-mail li:first-child {
+  color: var(--text-color)
+}
+
+.footer-address {
+  grid-column: span var(--columns);
+}
+
+.footer-hours {
+  grid-column: span var(--columns);
+
+}
+
+.footer-mail {
+  grid-column: span var(--columns);
+}
+
+.col {
+  grid-column: span var(--columns);
+}
+
+
+
+/*
+----- FOOTER END-----*/
+
+@media screen and (min-width: 768px) {
+  .gallery-img {
+    grid-column: span 4;
+  }
+
+  .footer-address {
+    grid-column: 1 / span 4;
+  }
+
+  .footer-hours {
+    grid-column: 5 / span 4;
+  }
+
+  .footer-mail {
+    grid-column: -5 / span 4;
+  }
+}
+
+
+@media screen and (min-width: 1140px) {
+  .gallery-img {
+    grid-column: span 4;
+  }
+
+  .footer-address {
+    grid-column: 2 / span 2;
+  }
+
+  .footer-hours {
+    grid-column: 4 / span 2;
+  }
+
+  .footer-mail {
+    grid-column: -4 / span 2;
+  }
+
+  .col-lg-third {
+    grid-column: span calc(var(--columns) / 3);
+  }
+
+  .col-lg-half {
+    grid-column: span calc(var(--columns) / 2);
+  }
+}
