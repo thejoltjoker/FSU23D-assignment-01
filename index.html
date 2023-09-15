@@ -9,132 +9,249 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kanit:wght@600&display=swap"
     rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <title>GIT Cafe</title>
 </head>
 
 
-
 <body>
+  <!-- Navbar -->
 
   <div class="grid">
+    <!-- Checkbox to handle menu trigger in mobile -->
+    <input type="checkbox" id="menu-toggle">
     <nav>
-      <!-- Left Menu-->
-      <ul>
+
+      <!-- Logo-->
+      <h1 id="logo">GIT Cafe
+
+      </h1>
+      <!-- Left Menu -->
+      <ul class="left-menu">
         <li><a href="">Home</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="membership.html">Membership</a></li>
-
       </ul>
-      <h1 id="logo">GIT Cafe</h1>
-      <!-- Right menu-->
-      <ul>
+      <!-- Right menu -->
+      <ul class="right-menu">
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="account.html">Account</a></li>
       </ul>
-
+      <!-- Label  for the menu trigger-->
+      <label id="menu-toggle-label" for="menu-toggle"></label>
     </nav>
-    <div class="nav-bg-trigger"></div>
 
-    <header>
-      <h1 class="wtf">Get Shi*t done</h1>
-      <h2 class="wtf">Unite, Code, Game, Create - The ultimate space for working remotely.</h2>
-      <h2 class="wtf">Come in for a coffee or connect with your peers.</h2>
-
-    </header>
-    <div class="nav-bg"></div>
-    <!-- Content -->
+  </div>
 
 
+  <!-- Background for nav, hidden behind header-->
+  <div id="nav-bg"></div>
 
-
-
-
-
-    <main class="container">
-      <div>
-
-
+  <div class="grid">
+    <header class="container-fluid col-12">
+      <div class="container">
+        <div id="hero" class="grid">
+          <div id="hero-content" class="col-12">
+            <!-- <h1 class="headerh1">Get Shi*t done </h1>
+            <p class="headerh2">Unite, Code, Game, Create - The ultimate space for working remotely.</p>
+            <p class="headerh3">Come in for a coffee or connect with your peers.</p> -->
+            <h1>Get Shi*t done </h1>
+            <p>Unite, Code, Game, Create - The ultimate space for working remotely.</p>
+            <p>Come in for a coffee or connect with your peers.</p>
+          </div>
+        </div>
       </div>
+    </header>
 
-      <section id="content-stats" class="col">
-        <h2>Our Brew for Software Success</h2>
-        <p>We understand that software development can be as complex as brewing the perfect cup of coffee. That's why
-          we've ground out a reputation for using the finest "code beans" and state-of-the-art "debugging machines" to
-          craft exceptional software solutions for you. </p>
-        <div class="grid">
-          <div class="col col-lg-third">
-            <h3>Lines of Code Brew</h3>
-            <p class="content-stats-data">29.296 million</p>
-          </div>
-          <div class="col col-lg-third">
-            <h3>Weekly Bagels</h3>
-            <p class="content-stats-data">6,583</p>
-          </div>
-          <div class="col col-lg-third">
-            <h3>Amount of Coffee Consumed</h3>
-            <p class="content-stats-data">22,208 liters</p>
+
+    <!-- Content -->
+    <main>
+      <section id="content-intro" class="landing-section brew">
+        <div class="container">
+          <div class="grid">
+            <div class="col-12">
+              <h2>Checkout your new main coffee branch</h2>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-7">
+              <p>Welcome to Git Cafe, where tech enthusiasts thrivel! We've crafted a haven for developers, gamers,
+                coders,
+                and
+                creator alike. Dive into code, level up in your favorite game, collaborate, or find a cozy spot to work.
+              </p>
+
+              <p>With high-speed internet, comfy workstations, gaming setups, and a welcoming community, Git Cafe is
+                wehre
+                your
+                tech-driven passions come to life. Join us today and unleash your creativity
+              </p>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-5 prevent-select justify-end">
+              <pre>
+<code><span class="color-blue">function</span> <span class="color-green">brewCoffee</span>(<span class="color-orange">coffeeBeans</span>, <span class="color-orange">water</span>) <span class="color-red">{</span>
+    <span class="color-red">if</span> (<span class="color-green">coffeeBeans</span> <span
+                class="color-red">&lt;</span> <span class="color-purple">10</span> <span
+                class="color-red">||</span> <span class="color-green">water</span> <span class="color-red">&lt;</span> <span
+                class="color-purple">200</span>) <span class="color-orange">{</span>
+        <span class="color-gray">// Not enough ingredients to brew!</span>
+        <span class="color-red">return</span> "<span class="color-brown">Not enough ingredients to brew!</span>";
+    <span class="color-orange">}</span>
+
+    <span class="color-green">grindBeans</span>(<span class="color-orange">coffeeBeans</span>);
+    <span class="color-green">heatWater</span>(<span class="color-orange">water</span>);
+
+    <span class="color-blue">return</span> "<span class="color-brown">Enjoy your coffee!</span>";
+<span class="color-red">}</span></code></pre>
+            </div>
+
           </div>
         </div>
       </section>
+      <section id="content-stats" class="landing-section">
+        <div class="container">
+          <section id="content-image" class="col-10">
+            <div class="code-img">
+              <!-- <img src="https://i.ibb.co/HHzXrTK/muhammad-raufan-yusup-r-YRE6ju-2-K8-unsplash-XX.jpg"
+              alt="Coding and drinking coffee"> -->
+              <img src="https://i.ibb.co/HHzXrTK/muhammad-raufan-yusup-r-YRE6ju-2-K8-unsplash-XX.jpg"
+                alt="Coding and drinking coffee">
+            </div>
+          </section>
+        </div>
+        <div class="container brew">
+          <div class="col-10">
+            <h2>Our Brew for Software Success</h2>
+            <div class="grid">
+              <div class="col-12 col-md-7">
+                <p>We understand that software development can be as complex as brewing the perfect cup of coffee.
+                  That's
+                  why
+                  we've ground out a reputation for using the finest "code beans" and state-of-the-art "debugging
+                  machines" to
+                  craft exceptional software solutions for you. </p>
+              </div>
+            </div>
 
-      <section id="content-coffee">
-        <article class="coffe-text">
-          <h2>Code and coffee done right</h2>
-          <p>
-            At Git Cafe, we’re all about brewing excellence, just like debugging code. That’s why we exclusively use the
-            best fair-trade coffee beans to power up your day. Our beans are as carefully selected as the lines of code
-            in
-            your favorite software.
-            <br><br>
-            Sip away and savor the blend that’s been crafted with precision - because in tech and coffee, the quality of
-            your code and your brew matters!
-          </p>
-        </article>
-        <article class="coffe-text">
-          <h2>100% organic</h2>
-          <h2>100% fairtrade</h2>
-          <h2>100% bug free</h2>
-        </article>
+            <div class="grid">
+              <div class="col-12 col-md-third text-center text-md-left">
+                <h3>Lines of Code Brew</h3>
+                <p class="content-stats-data">29.296 million</p>
+              </div>
+              <div class="col-12 col-md-third text-center">
+                <h3>Weekly Bagels</h3>
+                <p class="content-stats-data">6,583</p>
+              </div>
+              <div class="col-12 col-md-third text-center text-md-right">
+                <h3>Amount of Coffee Consumed</h3>
+                <p class="content-stats-data">22,208 liters</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <section id="content-coffee" class="landing-section">
 
+        <div class="container-fluid">
 
-      <section id="gallery" class="grid">
-        <div class="gallery-img">
-          <img src="https://i.pinimg.com/564x/48/c7/62/48c762c206c1aae6d36532b559511638.jpg" alt="Our work space">
+          <div class="container">
+            <div class="col-12 col-md-6">
+              <div class="coffe-text">
+                <h2 class="header-two text-center">Code and coffee done right</h2>
+                <div class="grid">
+                  <div class="col-12 col-md-8 col-md-start-3">
+
+                    <div class="coffe-content-size">
+                      <p>
+                        At Git Cafe, we’re all about brewing excellence, just like debugging code. That’s why we
+                        exclusively
+                        use
+                        the
+                        best fair-trade coffee beans to power up your day. Our beans are as carefully selected as the
+                        lines
+                        of
+                        code
+                        in your favorite software.
+                        <br>
+                        Sip away and savor the blend that’s been crafted with precision - because in tech and coffee,
+                        the
+                        quality
+                        of
+                        your code and your brew matters!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="coffee-text grid">
+                  <div class="coffee-text-data col-12 col-lg-third text-center">
+                    <p>100% organic</p>
+                  </div>
+                  <div class="coffee-text-data col-12 col-lg-third text-center">
+                    <p>100% fairtrade</p>
+                  </div>
+                  <div class="coffee-text-data col-12 col-lg-third text-center">
+                    <p>100% bug free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="gallery-img">
-          <img class="gallery-img" src="https://i.pinimg.com/564x/85/c0/10/85c010bb0c1cfae95a4795428b508051.jpg"
-            alt="A cup of coffee">
-        </div>
-        <div class="gallery-img">
-          <img class="gallery-img" src="https://i.pinimg.com/564x/44/70/15/4470159150fe5d80a1ad88fcee3284dd.jpg"
-            alt="Lounge area">
+      </section>
+      <section id="content-gallery" class="landing-section">
+        <div class="container">
+          <section id="gallery" class="grid">
+            <div class="gallery-img">
+              <img src="https://i.pinimg.com/564x/48/c7/62/48c762c206c1aae6d36532b559511638.jpg" alt="Our work space">
+            </div>
+            <div class="gallery-img">
+              <img src="https://i.pinimg.com/564x/85/c0/10/85c010bb0c1cfae95a4795428b508051.jpg" alt="A cup of coffee">
+            </div>
+            <div class="gallery-img">
+              <img src="https://i.pinimg.com/564x/44/70/15/4470159150fe5d80a1ad88fcee3284dd.jpg" alt="Lounge area">
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
-    <footer class="grid">
-      <div class="footer-address">
-        <ul>
-          <li>You find us here</li>
-          <li>Nytorpsvagen 8 </li>
-          <li>561 73 Husqvarna</li>
-        </ul>
-      </div>
-      <div class="footer-hours">
-        <ul>
-          <li>During these hours</li>
-          <li>Weekdays: 7am - 6pm </li>
-          <li>Weekends: 8am - 4pm</li>
-        </ul>
-      </div>
-      <div class="footer-mail">
-        <ul>
-          <li>Or reach us online</li>
-          <li>Email: hello@gitcafe.com </li>
-          <li>Social: @gitcafe</li>
-        </ul>
+    <footer>
+      <div class="container">
+        <div class="grid">
+          <div class="footer-content col-12 col-md-4 col-lg-3">
+            <ul>
+              <li>You find us here</li>
+              <li>Nytorpsvagen 8 </li>
+              <li>561 73 Husqvarna</li>
+            </ul>
+          </div>
+          <div class="footer-content col-12 col-md-4 col-lg-6">
+            <ul>
+              <li>During these hours</li>
+              <li>Weekdays: 7am - 6pm </li>
+              <li>Weekends: 8am - 4pm</li>
+            </ul>
+          </div>
+          <div class="footer-content col-12 col-md-4 col-lg-3">
+            <ul>
+              <li>Or reach us online</li>
+              <li>Email: hello@gitcafe.com </li>
+              <li>Social: @gitcafe</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 

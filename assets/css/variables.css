@@ -9,6 +9,13 @@
   --medium: 960px;
   --large: 1140px;
 
+
+  /* Paddings and margins */
+  --padding-sm: 1rem;
+  --padding-md: 2rem;
+  --padding-lg: 3rem;
+  --padding-xl: 4rem;
+
   /* Colors */
   --white: #fff;
   --black: #000;
@@ -29,4 +36,8 @@
   /* Fonts */
   --font-paragraph: 'Inter', sans-serif;
   --font-heading: 'Kanit', sans-serif;
+  --font-size-sm: 1em;
+  --font-size-md: 1.5em;
+  --font-size-lg: 2em;
+  --font-size-xl: 3em;
 }
