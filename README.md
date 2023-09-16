@@ -1,4 +1,16 @@
-# Git Cafe Website
+<p align="center">
+<img src="./android-chrome-384x384.png" align="center" style="max-width:100px;">
+    <h1 align="center">
+        <b>GIT Cafe Website</b>
+    </h1>
+    <p align="center">
+    Website for the pretend <b>GIT Cafe</b>; <i>The ultimate space for working remotely.</i>
+    <br />
+    <a href="https://thejoltjoker.github.io/FSU23D-assignment-01/"><strong>Website</strong></a>
+  </p>
+</p>
+
+# 
 
 This is the repository for the Git Cafe website, created by Group 8 during the Full Stack Developer course at Medieinstitutet. 
 
