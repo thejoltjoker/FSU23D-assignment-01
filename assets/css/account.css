@@ -1,0 +1,13 @@
+@import url('variables.css');
+
+
+#account-main section {
+  margin: var(--padding-xl) auto;
+}
+
+#account-header {
+  background-image: url("../img/account-header.jpg");
+  background-size: cover;
+  background-position: center 62%;
+  padding: var(--page-header-padding);
+}
