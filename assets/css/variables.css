@@ -11,10 +11,13 @@
 
 
   /* Paddings and margins */
+  --padding-xs: .5rem;
   --padding-sm: 1rem;
   --padding-md: 2rem;
   --padding-lg: 3rem;
   --padding-xl: 4rem;
+  --main-header-padding: 60vh 0 0;
+  --page-header-padding: 20vh 0 0;
 
   /* Colors */
   --white: #fff;
@@ -23,6 +26,12 @@
   --dark-gray: #181b1f;
   --almost-black: #0d1116;
   --almost-white: #fefefe;
+  --blue: #5aacbf;
+  --purple: #c09ac8;
+  --green: #b8d268;
+  --red: #f7677c;
+  --yellow: #fcd775;
+  --orange: #f99c64;
 
   /* Theme colors */
   --primary-color: #fff;
@@ -33,6 +42,7 @@
   --navbar-gradient: linear-gradient(180deg, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, 0) 100%);
   --footer-color: var(--almost-black);
 
+
   /* Fonts */
   --font-paragraph: 'Inter', sans-serif;
   --font-heading: 'Kanit', sans-serif;
@@ -40,4 +50,7 @@
   --font-size-md: 1.5em;
   --font-size-lg: 2em;
   --font-size-xl: 3em;
+
+  /* Buttons */
+  --button-radius: 6px;
 }
