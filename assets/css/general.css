@@ -42,6 +42,22 @@ main {
   grid-column: span 12;
 }
 
+button {
+  background: var(--blue);
+  padding: calc(var(--padding-xs)*1.5) calc(var(--padding-sm)*1.5);
+  border: none;
+  border-radius: var(--button-radius);
+  text-align: center;
+  font-weight: 700;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background: color-mix(in srgb, var(--blue) 50%, white);
+  transition: all .2s ease;
+}
+
 
 #hero {
   min-height: 60vh;
@@ -52,11 +68,11 @@ main {
   margin-bottom: 8vh;
 }
 
-#hero-content h1 {
+header h1 {
   font-size: var(--font-size-xl);
 }
 
-#hero-content p {
+header p {
   margin: 0;
   font-size: var(--font-size-md);
 }
@@ -65,7 +81,7 @@ header {
   /* border-color: pink; */
   /* border-style: solid; */
   /* background-image: url("https://i.ibb.co/DDzyLy7/ilyuza-mingazova-Ha-TIYO87q-WQ-unsplash.jpg"); */
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center 62%;
   /* min-height: 400px; */
@@ -73,6 +89,11 @@ header {
   /* padding-bottom: 5vh; */
 }
 
+
+.header-content {
+  align-self: end;
+  margin-bottom: 8vh;
+}
 
 /* HEADER */
 .headerh1 {
@@ -259,7 +280,7 @@ nav ul li a {
   grid-column: span var(--columns);
   display: flex;
   flex-flow: row wrap;
-  background-image: url("https://raw.githubusercontent.com/thejoltjoker/FSU23D-assignment-01/main/assets/img/coffee-beans.jpg");
+  background-image: url("../img/coffee-beans.jpg");
   background-size: cover;
   /* min-height: 300px; */
   justify-content: center;

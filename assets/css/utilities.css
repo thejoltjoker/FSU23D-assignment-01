@@ -1,32 +1,37 @@
 @import url("variables.css");
 
+
+.transition-all {
+  transition: all .2s ease;
+}
+
 /* Colors */
 .color-blue {
-  color: #a2d1bc;
+  color: var(--color-blue);
 }
 
 .color-purple {
-  color: #c09ac8;
+  color: var(--color-purple);
 }
 
 .color-green {
-  color: #b8d268;
+  color: var(--color-green);
 }
 
 .color-red {
-  color: #f7677c;
+  color: var(--color-red);
 }
 
-.color-brown {
-  color: #fcd775;
+.color-yellow {
+  color: var(--color-yellow);
 }
 
 .color-gray {
-  color: #808080;
+  color: var(--color-gray);
 }
 
 .color-orange {
-  color: #f99c64;
+  color: var(--color-orange);
 }
 
 /* Text */
@@ -42,9 +47,11 @@
   justify-self: end;
 }
 
+
 /* Table */
 .table {
   display: table;
+  border-collapse: collapse;
 }
 
 .tr {
@@ -53,6 +60,10 @@
 
 .td {
   display: table-cell;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--gray);
 }
 
 /* Grid */
