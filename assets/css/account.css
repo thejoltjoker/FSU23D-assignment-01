@@ -11,3 +11,33 @@
   background-position: center 62%;
   padding: var(--page-header-padding);
 }
+
+
+#account-order .table {
+  width: 100%;
+  border-radius: var(--button-radius);
+  overflow: hidden;
+  border: 1px solid var(--gray);
+}
+
+/* #account-order .tr {
+  border-bottom: 1px solid color-mix(in srgb, var(--gray) 20%, var(--bg-color));
+} */
+
+#account-order .th {
+  background: color-mix(in srgb, var(--dark-gray) 90%, white);
+}
+
+#account-order .tr:nth-child(odd) {
+  background: var(--almost-black);
+}
+
+/* #account-order .tr:nth-child(even) {
+  background: color-mix(in srgb, var(--dark-gray) 95%, white);
+} */
+
+
+#account-order .td {
+  border-radius: inherit;
+  padding: var(--padding-xs) 0 var(--padding-xs) 1em;
+}
