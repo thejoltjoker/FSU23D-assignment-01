@@ -42,6 +42,19 @@
   justify-self: end;
 }
 
+/* Table */
+.table {
+  display: table;
+}
+
+.tr {
+  display: table-row;
+}
+
+.td {
+  display: table-cell;
+}
+
 /* Grid */
 .grid {
   display: grid;
