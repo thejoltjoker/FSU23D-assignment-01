@@ -9,6 +9,8 @@
   --medium: 960px;
   --large: 1140px;
 
+  /* Transition */
+  --transition-all: all .2s ease;
 
   /* Paddings and margins */
   --padding-xs: .5rem;
