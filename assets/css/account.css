@@ -5,6 +5,21 @@
   margin: var(--padding-xl) auto;
 }
 
+#account-main h2 {
+  line-height: 1;
+}
+
+#account-main p {
+  margin: var(--padding-sm) 0;
+}
+
+#account-main .table {
+  margin-top: var(--padding-sm);
+  white-space: nowrap;
+}
+
+
+
 #account-header {
   background-image: url("../img/account-header.jpg");
   background-size: cover;
@@ -12,6 +27,9 @@
   padding: var(--page-header-padding);
 }
 
+/* #account-membership p {
+  font-size: 1.125em;
+} */
 
 #account-order .table {
   width: 100%;
@@ -25,19 +43,76 @@
 } */
 
 #account-order .th {
-  background: color-mix(in srgb, var(--dark-gray) 90%, white);
+  background: color-mix(in srgb, var(--dark-gray) 75%, white);
 }
 
 #account-order .tr:nth-child(odd) {
   background: var(--almost-black);
 }
 
-/* #account-order .tr:nth-child(even) {
+#account-order .tr:nth-child(even) {
   background: color-mix(in srgb, var(--dark-gray) 95%, white);
-} */
+}
 
 
 #account-order .td {
   border-radius: inherit;
   padding: var(--padding-xs) 0 var(--padding-xs) 1em;
+}
+
+#account-profile .table {
+  margin-bottom: var(--padding-sm);
+}
+
+#account-profile .td {
+  vertical-align: middle;
+  padding-bottom: var(--padding-xs);
+}
+
+#account-profile .td:first-child {
+  padding-right: var(--padding-sm);
+  font-family: var(--font-heading);
+}
+
+
+
+/* 
+#account-profile img {
+  transition: var(--transition-all);
+
+}
+
+#account-profile img:hover {
+  opacity: .5;
+  transition: var(--transition-all);
+} */
+
+.account-profile-picture {
+  max-width: 200px;
+  max-height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  text-wrap: wrap;
+  margin: auto;
+}
+
+.account-profile-picture-cover {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--almost-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: var(--transition-all);
+  cursor: pointer;
+}
+
+.account-profile-picture-cover:hover {
+  opacity: .7;
+  transition: var(--transition-all);
 }
