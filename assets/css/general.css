@@ -58,6 +58,34 @@ button:hover {
   transition: all .2s ease;
 }
 
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel] {
+  background: var(--almost-black);
+  padding: calc(var(--padding-xs)*1.5) calc(var(--padding-xs));
+  border: none;
+  border-radius: var(--button-radius);
+  color: color-mix(in srgb, var(--almost-white) 50%, var(--almost-black));
+  font-size: var(--font-size-sm);
+  transition: all .2s ease;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid color-mix(in srgb, var(--dark-gray) 90%, var(--almost-white));
+  font-family: var(--font-paragraph);
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+  border: 1px solid var(--blue);
+  color: var(--almost-white);
+  outline: none;
+  box-shadow: 0px 0px 5px 0px var(--blue);
+}
+
+
 
 #hero {
   min-height: 60vh;
@@ -117,6 +145,7 @@ header {
   /* align-items: end; */
 
 }
+
 
 
 
