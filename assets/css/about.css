@@ -1,0 +1,14 @@
+#about-intro {
+    font-family: var(--font-heading);
+    padding: calc(var(--spacer)*6) 0;
+    grid-column: span var(--columns);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+.our-story img {
+    max-width: 100%;
+
+}
