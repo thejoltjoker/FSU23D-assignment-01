@@ -1,11 +1,7 @@
 
 
 
-
-
-
-
-  #membership-header {
+#membership-header {
     background-image: url("../img/membership-header.jpg");
     background-size: cover;
     max-height: 400px;
@@ -19,6 +15,7 @@
 main{
 display: grid;
 grid-template-columns: var(--columns);
+grid-template-rows: auto;
 /* grid-row: 2vh; */
 /* grid-gap: var(--gutter); */
 
@@ -47,4 +44,7 @@ grid-template-columns: var(--columns);
 
 }
 
+
+
+/*  */
 
