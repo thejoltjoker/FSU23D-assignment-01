@@ -1,0 +1,5 @@
+.heroContainer,
+.sectionContainer,
+.sidebarContainer{
+    border: solid orange;
+}
