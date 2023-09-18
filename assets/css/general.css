@@ -197,7 +197,9 @@ nav ul li a {
   text-decoration: none;
 
 }
-
+nav ul li a.active {
+  color: var(--blue);
+}
 /* Background for nav when scrolling, hidden behind hero-image */
 #nav-bg {
   position: fixed;
