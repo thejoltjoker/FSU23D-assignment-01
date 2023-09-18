@@ -47,18 +47,23 @@ main {
   grid-column: span 12;
 }
 
-button {
+button,
+.button {
   background: var(--blue);
   padding: calc(var(--padding-xs)*1.5) calc(var(--padding-sm)*1.5);
   border: none;
   border-radius: var(--button-radius);
   text-align: center;
   font-weight: 700;
+  font-size: var(--font-size-sm);
   transition: all .2s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--dark-gray);
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background: color-mix(in srgb, var(--blue) 50%, white);
   transition: all .2s ease;
 }
@@ -66,7 +71,8 @@ button:hover {
 input[type=text],
 input[type=number],
 input[type=email],
-input[type=tel] {
+input[type=tel],
+input[type=textarea] {
   background: var(--almost-black);
   padding: calc(var(--padding-xs)*1.5) calc(var(--padding-xs));
   border: none;
@@ -83,7 +89,8 @@ input[type=tel] {
 input[type=text]:focus,
 input[type=number]:focus,
 input[type=email]:focus,
-input[type=tel]:focus {
+input[type=tel]:focus,
+input[type=textarea]:focus {
   border: 1px solid var(--blue);
   color: var(--almost-white);
   outline: none;
@@ -197,9 +204,11 @@ nav ul li a {
   text-decoration: none;
 
 }
+
 nav ul li a.active {
   color: var(--blue);
 }
+
 /* Background for nav when scrolling, hidden behind hero-image */
 #nav-bg {
   position: fixed;
@@ -342,7 +351,8 @@ nav ul li a.active {
   width: 200px;
 }
 
-.gallery-img img {
+.gallery-img img,
+.gallery-img picture {
   aspect-ratio: 1 / 1;
   width: 100%;
   height: 100%;
@@ -354,15 +364,14 @@ nav ul li a.active {
   z-index: -1;
   width: 100%;
   min-width: 600px;
-
 }
 
 .gallery-img:nth-child(2) {
-  padding: var(--padding-md) var(--padding-md) var(--padding-sm) var(--padding-md)
+  padding: var(--padding-sm) var(--padding-sm) var(--padding-xs) var(--padding-sm)
 }
 
 .gallery-img:nth-child(3) {
-  padding: var(--padding-sm) var(--padding-md) var(--padding-md) var(--padding-md)
+  padding: var(--padding-xs) var(--padding-sm) var(--padding-sm) var(--padding-sm)
 }
 
 
