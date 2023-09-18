@@ -275,10 +275,6 @@ nav ul li a {
 }
 
 #content-image {
-  grid-column: span var(--columns);
-  /* margin-top: 100px;*/
-  /* max-height: 450px; */
-  /* overflow: hidden;*/
   max-width: 100%;
 }
 
@@ -498,6 +494,7 @@ footer ul {
   nav ul.right-menu {
     order: 2;
   }
+
 }
 
 
@@ -508,6 +505,11 @@ footer ul {
 
   .landing-section {
     padding: var(--padding-xl);
+  }
+
+  #content-image {
+    max-width: 90%;
+    margin: auto;
   }
 }
 
