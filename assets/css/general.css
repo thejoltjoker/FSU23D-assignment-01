@@ -47,7 +47,8 @@ main {
   grid-column: span 12;
 }
 
-button {
+button,
+.button {
   background: var(--blue);
   padding: calc(var(--padding-xs)*1.5) calc(var(--padding-sm)*1.5);
   border: none;
@@ -58,7 +59,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background: color-mix(in srgb, var(--blue) 50%, white);
   transition: all .2s ease;
 }
