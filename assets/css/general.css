@@ -55,8 +55,11 @@ button,
   border-radius: var(--button-radius);
   text-align: center;
   font-weight: 700;
+  font-size: var(--font-size-sm);
   transition: all .2s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--dark-gray);
 }
 
 button:hover,
