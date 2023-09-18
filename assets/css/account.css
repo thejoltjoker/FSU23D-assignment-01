@@ -71,15 +71,53 @@ section#account-profile {
   font-family: var(--font-heading);
 }
 
+.profile-details {
+  display: flex;
+  flex-flow: column wrap;
+  margin: var(--padding-sm) 0;
+}
+
+.profile-details-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.profile-details-label,
+.profile-details-field {
+  margin-bottom: var(--padding-xs);
+}
+
+.profile-details-label {
+  flex: 1 1 calc(var(--large)/7);
+}
+
+.profile-details-field {
+  flex: 3 1 calc(var(--large)/2.6);
+}
+
+.profile-picture-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
+}
+
 .account-profile-picture {
+  flex: 0 1 auto;
   max-width: 200px;
   max-height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
   text-wrap: wrap;
-  margin: auto;
+
+  /* margin: auto; */
 }
+
+
 
 .account-profile-picture-cover {
   opacity: 0;
@@ -99,4 +137,19 @@ section#account-profile {
 .account-profile-picture-cover:hover {
   opacity: .7;
   transition: var(--transition-all);
+}
+
+.profile-picture-button {
+  flex: 0 1 auto;
+  margin-top: var(--padding-sm);
+}
+
+.button {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-picture-button {
+    display: none;
+  }
 }
