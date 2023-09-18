@@ -96,6 +96,17 @@ input[type=tel]:focus {
   margin-bottom: 8vh;
 }
 
+header {
+  z-index: 995;
+  position: relative;
+}
+
+#main-header {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center 62%;
+}
+
 header h1 {
   font-size: var(--font-size-xl);
 }
@@ -104,19 +115,6 @@ header p {
   margin: 0;
   font-size: var(--font-size-md);
 }
-
-header {
-  /* border-color: pink; */
-  /* border-style: solid; */
-  /* background-image: url("https://i.ibb.co/DDzyLy7/ilyuza-mingazova-Ha-TIYO87q-WQ-unsplash.jpg"); */
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
-  background-position: center 62%;
-  /* min-height: 400px; */
-  z-index: 997;
-  /* padding-bottom: 5vh; */
-}
-
 
 .header-content {
   align-self: end;
@@ -172,6 +170,11 @@ nav #logo {
   font-size: var(--font-size-lg);
   flex-basis: 100%;
   text-align: center;
+}
+
+nav #logo a {
+  text-decoration: none;
+  color: var(--almost-white);
 }
 
 nav ul {
