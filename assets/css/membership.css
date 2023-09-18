@@ -7,17 +7,14 @@
 
 
 
-header {
-    /* border-color: pink; */
-    /* border-style: solid; */
-    /* background-image: url("https://i.ibb.co/DDzyLy7/ilyuza-mingazova-Ha-TIYO87q-WQ-unsplash.jpg"); */
+
+  #membership-header {
+    /* background-image: url("../img/account-header.jpg"); */
     background-image: url("https://i.ibb.co/RzFmvFd/membership-header.jpg");
     background-size: cover;
-    background-position: center 62%;
     max-height: 300px;
-    /* z-index: 997; */
-    /* padding-bottom: 5vh; */
-  }
+    }
+
 
 
 
