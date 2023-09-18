@@ -5,15 +5,13 @@
 
 
 
-
-
-
   #membership-header {
-    /* background-image: url("../img/account-header.jpg"); */
     background-image: url("../img/membership-header.jpg");
     background-size: cover;
-    max-height: 300px;
+    max-height: 400px;
+    background-position: center;
     }
+
 
 
 
@@ -21,6 +19,7 @@
 main{
 display: grid;
 grid-template-columns: var(--columns);
+/* grid-row: 2vh; */
 /* grid-gap: var(--gutter); */
 
 }
@@ -28,30 +27,24 @@ grid-template-columns: var(--columns);
 
 .flexbox {
     display: flex;
-    /* flex-direction: column; */
     justify-content:space-around;
+    align-items: ;
     border: 1px solid red;
-    /* padding: 1em; */
-    /* margin: 1em; */
+    
 }
 
 .subitems {
     border: 1px solid pink;
-    /* padding: 1em; */
-    /* margin: 1em; */
+    width: 500px;
+    min-height: 600px;
+
 }
 
 
+.list {
 
+    list-style-type: none;
 
-
-
-
-
-
-
-
-
-
+}
 
 
