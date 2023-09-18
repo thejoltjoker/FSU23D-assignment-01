@@ -24,32 +24,38 @@
   padding: var(--page-header-padding);
 }
 
-#account-order .table {
+.table {
   width: 100%;
   border-radius: var(--button-radius);
   overflow: hidden;
 }
 
-#account-order .th {
+#account-order th {
   background: color-mix(in srgb, var(--dark-gray) 75%, white);
+  text-align: left;
+  padding: var(--padding-xs) 0 var(--padding-xs) 1em;
+  white-space: wrap;
 }
 
-#account-order .tr:nth-child(odd) {
+#account-order tr:nth-child(odd) {
   background: color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
 }
 
-#account-order .tr:nth-child(even) {
+#account-order tr:nth-child(even) {
   background: color-mix(in srgb, var(--dark-gray) 95%, white);
 }
 
-#account-order .td {
+#account-order td {
   border-radius: inherit;
   padding: var(--padding-xs) 0 var(--padding-xs) 1em;
 }
 
-#account-main section #account-profile {
+
+section#account-profile {
   margin-bottom: 0;
 }
+
+
 
 #account-profile .table {
   margin-bottom: var(--padding-sm);
