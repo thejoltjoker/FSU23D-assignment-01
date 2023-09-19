@@ -9,8 +9,11 @@
   background-color: white;
   color: black;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
+position: relative;
   background: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-paragraph);
@@ -453,7 +456,27 @@ footer ul {
   .footer-content {
     padding: var(--padding-xl) 0;
   }
+  .totop-container {
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100%;
+  }
+  
+  .totop-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+  }
+  
+  .totop-container a {
+    margin:10px;
+    opacity: 0.8;
+    position: sticky;
+    top: 88vh;
 
+  }
 
 
 
