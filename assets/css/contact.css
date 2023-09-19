@@ -6,6 +6,7 @@
 #contact-header {
     background-image: url("../img/contact-header.jpg");
     background-size: cover;
-    background-position: center 5%;
+    background-position: center 20%;
+    padding: var(--page-header-padding);
   }
-  
+
