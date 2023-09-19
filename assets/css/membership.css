@@ -73,7 +73,104 @@ align-self: center;
 
 /* ***************** GRIDBOX START ********************* */
 
-.gridboxheadlinemember {
+
+
+
+
+.gridboxes-member {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  margin-top: 30px;
+  border: 2px solid blue;
+  }
+
+
+.boxes-member {
+  min-height: 300px;
+  border: 2px solid red;
+  grid-column: auto / span 3;
+  
+
+}
+
+
+  
+@media screen and (min-width: 768px) {
+  
+  .boxes-member {
+    grid-column: auto / span 1;
+  }
+
+  
+#box-1 {
+  order: 2;
+}
+
+#box-2 {
+  order: 3;
+}
+
+#box-3 {
+  order: 4;
+}
+
+#box-4 {
+  order: 1;
+}
+
+#box-5 {
+  order: 6;
+}
+
+#box-6 {
+  order: 5;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .gridboxheadlinemember {
   margin-top: 2em;
   margin-bottom: 0;
 }
@@ -81,49 +178,117 @@ align-self: center;
 
 .gridboxcontainermember {
 display: grid;
-grid-template-columns: repeat(12, 1fr);
-grid-row: repeat(2, auto);
+grid-template-columns: var(--columns);
 border: 5px solid red;
-}
+} */
 
-.imgmember1 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .imgmember1 {
 grid-column-start: 1;
 grid-column-end: 3;
 grid-row-start: 1;
-grid-row-end: 2;
+grid-row-end: 1;
 border: 5px solid magenta;
 }
 
 .imgmember2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
   grid-row-end: 2;
   border: 5px solid magenta;
   }
 
   .imgmember3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 10;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 1;
     border: 5px solid magenta;
     }
 
     .textboxmember1 {
 border: 5px solid green;
+grid-column-start: 7;
+grid-column-end: 10;
+grid-row-start: 1;
+grid-row-end: 1;
 
-    }
+}
 
   .textboxmember2 {
   border: 5px solid green;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 1;
       
 }
 
  .textboxmember3 {
  border: 5px solid green;
-            
- }
+ grid-column-start: 7;
+ grid-column-end: 10;
+ grid-row-start: 1;
+ grid-row-end: 1;            
+ } */
 
 
 
