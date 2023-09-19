@@ -77,17 +77,18 @@
               <div class="col-12 col-md-4">
                 <section>
                     <h3>Send us a message</h3>
-           <div class="table">
-           <div class="tr"><div class="th">Your name:</div></div>
-           <div class="tr"><div class="td"><input type="text" name="name" value="John Doe"></div></div>
-           <div class="tr"><div class="th">Your email:</div></div>
-           <div class="tr"><div class="td"><input type="text" name="name" value="John Doe"></div></div>
-           <div class="tr"><div class="th">Subject</div></div>
-           <div class="tr"><div class="td"><input type="text" name="name" value="John Doe"></div></div>
-           <div class="tr"><div class="th">Message:</div></div>
-           <div class="tr"><div class="td"><textarea></textarea></div></div>
-           <div class="tr"><div class="td"><button>Send</button></div></div>
-           </div>
+      
+            <form class="table">
+                <div class="tr"><div class="th"><label for ="name-input">Your name:</label></div></div>
+                <div class="tr"><div class="td"><input type="text" id="name-input" name="name" placeholder="John Doe"></div></div>
+                <div class="tr"><div class="th"><label for ="email-input">Your email:</label></div></div>
+                <div class="tr"><div class="td"><input type="text" id="email-input" name="email" placeholder="johndoe@mail.com"></div></div>
+                <div class="tr"><div class="th"><label for ="subject-input">Subject:</label></div></div>
+                <div class="tr"><div class="td"><input type="text" id="subject-input" name="subject" placeholder="Subject"></div></div>
+                <div class="tr"><div class="th"><label for ="message-input">Message:</label></div></div>
+                <div class="tr"><div class="td"><textarea id="message-input" name="message" placeholder="message"></textarea></div></div>
+                <div class="tr"><div class="td"><button id="send-message">Send</button></div></div>
+            </form>
 
                 
             </section>
