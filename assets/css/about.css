@@ -3,24 +3,24 @@
 
 }
 
-#about-intro {
+/*#about-intro {
     font-family: var(--font-heading);
-    padding: calc(var(--spacer)*6) 0;
-    grid-column: span var(--columns);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
 
+    grid-column: span var(--columns);
+  
+  }
+*/
 .our-story img {
     max-width: 100%;
-
 }
+
+/*#story-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}*/
 
 .description {
     border: none;
-   
 }
 
 .description img {
@@ -49,11 +49,10 @@
 }
 
 
-
 @media screen and (min-width: 768px) {
    
     .description img {
-        display:block;
+        display: block;
     }
 }
 
