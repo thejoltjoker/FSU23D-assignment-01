@@ -44,7 +44,8 @@ main{
     justify-content:space-around;
     flex-wrap: wrap;
     /* border: 5px solid red; */
-    margin: 4em;
+    margin: 4rem;
+    margin-top: 8rem;
     
 }
 
@@ -75,13 +76,19 @@ li {
     /* text-align: center; */
 }
 
+.price-membership {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
 /* .item1-color {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 } */
 
 
 .button-member {
-margin-top: 5rem;
+margin-top: 2rem;
 align-self: center;
 
 
@@ -107,8 +114,8 @@ align-self: center;
 .gridboxes-member {
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-  margin-top: 30px;
-  margin-bottom: 7rem;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
   /* border: 2px solid blue; */
   }
 
