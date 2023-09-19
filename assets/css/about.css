@@ -1,3 +1,8 @@
+
+#about-mobile {
+
+}
+
 #about-intro {
     font-family: var(--font-heading);
     padding: calc(var(--spacer)*6) 0;
@@ -19,6 +24,7 @@
 }
 
 .description img {
+    display: none;
     max-width: 100%;
     padding: 20px;
 }
@@ -45,7 +51,10 @@
 
 
 @media screen and (min-width: 768px) {
-
+   
+    .description img {
+        display:block;
+    }
 }
 
 @media screen and (min-width: 1140px) {
