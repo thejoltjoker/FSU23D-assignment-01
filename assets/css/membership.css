@@ -1,6 +1,5 @@
 
-
-
+/* ****************** Header  START ***************** */
 #membership-header {
     background-image: url("../img/membership-header.jpg");
     background-size: cover;
@@ -20,7 +19,10 @@
     padding: 5px;
     }
 
+/* **************** Header  END ******************** */
 
+
+/* ***************** 3x FLEXBOXES START ********************* */
 
 main{
 display: grid;
@@ -63,10 +65,31 @@ align-self: center;
 
 }
 
+/* ***************** 3x FLEXBOXES END ********************* */
 
 
 
 
+
+/* ***************** GRIDBOX START ********************* */
+
+.gridboxcontainermember {
+display: grid;
+grid-template-columns: var(--columns);
+grid-row: repeat(2, auto);
+border: 1px solid red;
+margin-top: 2em;
+}
+
+
+
+
+/* ***************** GRIDBOX END ********************* */
+
+
+
+
+/* ***************** MEDIAQUERIES START ********************* */
 
 @media screen and (min-width: 768px) {
 
@@ -93,3 +116,7 @@ align-self: center;
   @media screen and (min-width: 1140px) {
   
   }
+
+
+
+  /* ***************** MEDIAQUERIES END ********************* */
