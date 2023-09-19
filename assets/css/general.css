@@ -72,7 +72,7 @@ input[type=text],
 input[type=number],
 input[type=email],
 input[type=tel],
-input[type=textarea] {
+textarea {
   background: var(--almost-black);
   padding: calc(var(--padding-xs)*1.5) calc(var(--padding-xs));
   border: none;
@@ -84,13 +84,14 @@ input[type=textarea] {
   width: 100%;
   border: 1px solid color-mix(in srgb, var(--dark-gray) 90%, var(--almost-white));
   font-family: var(--font-paragraph);
+  resize: none;
 }
 
 input[type=text]:focus,
 input[type=number]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
-input[type=textarea]:focus {
+textarea:focus{
   border: 1px solid var(--blue);
   color: var(--almost-white);
   outline: none;
