@@ -4,19 +4,19 @@
 #membership-header {
     background-image: url("../img/membership-header.jpg");
     background-size: cover;
-    min-height: 400px;
+    min-height: 350px;
     background-position: center;
-    position: relative;
-    }
+ }
+
+ .textcontainer {
+  padding: 7em;
+  
+ }
 
 .h1member,
 .pmember {
-    position: absolute;
-    top: 50%;
-    /* left: 50%; */
-    /* color: white; */
-    /* font-size: 4rem; */
-    text-align: center;
+    /* margin-top: 2em; */
+    text-align: left;
     padding: 5px;
     }
 
@@ -32,81 +32,44 @@ grid-template-rows: auto;
 }
 
 
-.flexbox {
+.flexboxmember {
     display: flex;
     justify-content:space-around;
-    align-items: ;
+    flex-wrap: wrap;
     border: 1px solid red;
     
 }
 
-.subitems {
+.subitemsmember {
     border: 1px solid pink;
-    width: 500px;
+    width: 400px;
     min-height: 600px;
+    margin: 2em;
 
 }
 
 
-.list {
-
+.listmember {
+    display: flex;
+    flex-wrap: nowrap;
     list-style-type: none;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.buttonmember {
+align-self: center;
 
 }
 
 
 
-@media  (max-width: 768px) {
-
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--------------------------
 
 
 
 @media screen and (min-width: 768px) {
 
-    #gallery {
-      flex-direction: row;
-      align-items: normal;
-      min-height: auto;
-    }
-  
-    .gallery-img:first-child {
-      position: relative;
-      min-width: auto;
-    }
-  
-    .gallery-img {
-      border: 0px solid black;
-      flex: 1;
-      width: auto;
-      height: auto;
-      padding: 0px !important;
-    }
   
     .headerh1 {
       font-size: 4em;
@@ -117,75 +80,16 @@ grid-template-rows: auto;
       font-size: 1.5em;
     }
   
-    .content-stats-bagels {
-      text-align: center;
-    }
   
-    .content-stats-bagels {
-      text-align: center;
-    }
-  
-    .gallery-img {
-      grid-column: span 4;
-    }
-  
-    .footer-content {
+    /* .footer-content {
       padding: var(--padding-xl) 0;
-    }
+    } */
   
   
   
   
-    /* #### NAV #### */
-  
-    #menu-toggle-label {
-      display: none;
-    }
-  
-    nav {
-      justify-content: space-between;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0) !important;
-      width: 100%;
-      padding: 0% 3%;
-    }
-  
-    nav #logo {
-      flex-basis: auto;
-      order: 1;
-    }
-  
-    nav ul {
-      display: inline-block;
-      flex-basis: auto;
-      align-items: center;
-    }
-  
-    nav ul li {
-      padding: 0px var(--padding-sm);
-      display: inline-block;
-    }
-  
-    /* Set order of left and right menu */
-    nav ul.left-menu {
-      order: 0;
-    }
-  
-    nav ul.right-menu {
-      order: 2;
-    }
-  
-  }
-  
+
   
   @media screen and (min-width: 1140px) {
   
-    .gallery-img {
-      grid-column: span 4;
-    }
-  
-    #content-image {
-      max-width: 90%;
-      margin: auto;
-    }
   }
