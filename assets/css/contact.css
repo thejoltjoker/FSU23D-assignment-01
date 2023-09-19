@@ -1,3 +1,11 @@
 #map {
     width: 100%;
 }
+
+
+#contact-header {
+    background-image: url("../img/contact-header.jpg");
+    background-size: cover;
+    background-position: center 5%;
+  }
+  
