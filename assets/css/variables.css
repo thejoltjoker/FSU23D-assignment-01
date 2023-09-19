@@ -18,6 +18,7 @@
   --padding-md: 2rem;
   --padding-lg: 3rem;
   --padding-xl: 4rem;
+  --padding-landing-section: 3rem 0;
   --main-header-padding: 60vh 0 0;
   --page-header-padding: 20vh 0 0;
 
@@ -53,6 +54,33 @@
   --font-size-lg: 2em;
   --font-size-xl: 3em;
 
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1rem;
+
   /* Buttons */
   --button-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --padding-landing-section: 4rem 0;
+
+    /* Font */
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  :root {
+    --padding-landing-section: 6rem 0;
+
+    /* Font */
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.5rem;
+  }
 }

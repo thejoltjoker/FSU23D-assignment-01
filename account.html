@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- Account page styles -->
+  <link rel="stylesheet" href="./assets/css/account.css" />
+
+  <!-- Web font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kanit:wght@600&display=swap"
     rel="stylesheet">
-
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -37,7 +40,7 @@
       </h1>
       <!-- Left Menu -->
       <ul class="left-menu">
-        <li><a href="">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="membership.html">Membership</a></li>
       </ul>
@@ -45,17 +48,17 @@
       <ul class="right-menu">
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="account.html">Account</a></li>
+        <li><a href="account.html" class="active">Account</a></li>
       </ul>
       <!-- Label  for the menu trigger-->
       <label id="menu-toggle-label" for="menu-toggle"></label>
     </nav>
 
   </div>
-
-
   <!-- Background for nav, hidden behind header-->
-  <!-- <div id="nav-bg"></div> -->
+  <div id="nav-bg"></div>
+
+  <!-- Banner -->
   <header id="account-header">
     <div class="container-fluid">
       <div class="container">
@@ -78,70 +81,73 @@
 
           <section id="account-profile">
             <h2>Profile</h2>
-            <div class="table">
-              <div class="tr">
-                <div class="td">
+            <div class="profile-details">
+              <div class="profile-details-row">
+                <div class="profile-details-label">
                   Profile Picture:
                 </div>
-                <div class="td">
-                  <div class="account-profile-picture">
-                    <div class="account-profile-picture-cover">
-                      Click here to change profile picture
+                <div class="profile-details-field">
+                  <div class="profile-picture-wrapper">
+                    <div class="account-profile-picture">
+                      <div class="account-profile-picture-cover">
+                        Click here to change profile picture
+                      </div>
+                      <img src="http://placekitten.com/200/200" alt="">
                     </div>
-                    <img src="http://placekitten.com/200/200" alt="">
+                    <button class="profile-picture-button">Change profile picture</button>
                   </div>
                 </div>
               </div>
-              <div class="tr">
-                <div class="td">
+              <div class="profile-details-row">
+                <div class="profile-details-label">
                   Name:
                 </div>
-                <div class="td">
+                <div class="profile-details-field">
                   <input type="text" name="name" value="John Doe">
                 </div>
               </div>
-              <div class="tr">
-                <div class="td">
+              <div class="profile-details-row">
+                <div class="profile-details-label">
                   Username:
                 </div>
-                <div class="td">
+                <div class="profile-details-field">
                   <input type="text" name="username" value="@johndope">
                 </div>
               </div>
-              <div class="tr">
+              <div class="profile-details-row">
                 <br>
               </div>
-              <div class="tr">
-                <div class="td">
+              <div class="profile-details-row">
+                <div class="profile-details-label">
                   Email:
                 </div>
-                <div class="td">
+                <div class="profile-details-field">
                   <input type="email" name="email" value="john.doe@example.com">
                 </div>
               </div>
-              <div class="tr">
-                <div class="td">
+              <div class="profile-details-row">
+                <div class="profile-details-label">
                   Phone Number:
                 </div>
-                <div class="td">
+                <div class="profile-details-field">
                   <input type="tel" name="name" value="+1 123-456-7890">
                 </div>
               </div>
-              <div class="tr">
+              <div class="profile-details-row">
                 <br>
               </div>
-              <div class="tr">
-                <div class="td">
+              <div class="profile-details-row">
+                <div class="profile-details-label">
                   Address:
                 </div>
-                <div class="td">
+                <div class="profile-details-field">
                   <input type="text" name="address" value="Streetname 123">
                 </div>
               </div>
-              <div class="tr">
-                <div class="td">
+              <div class="profile-details-row">
+                <div class="profile-details-label">
                 </div>
-                <div class="td">
+                <div class="profile-details-field">
                   <div class="grid">
                     <div class="col-4">
                       <input type="text" name="zip-code" value="45678">
@@ -153,6 +159,7 @@
                 </div>
               </div>
             </div>
+
             <button>Save profile</button>
           </section>
 
@@ -163,122 +170,67 @@
             <p>
               You are currently on the <b>Freelancer</b> plan until 24 Dec, 2023.
             </p>
-            <button>Upgrade</button>
+            <a href="membership.html" class="button">Upgrade</a>
           </section>
           <section id="account-order">
             <h2>Orders</h2>
-            <div class="table">
-              <div class="th">
-                <div class="td">
-                  Date
-                </div>
-                <div class="td">
-                  Order details
-                </div>
-                <div class="td">
-                  Credits used
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-09-16
-                </div>
-                <div class="td">
-                  2x Black Coffee
-                </div>
-                <div class="td">
-                  3
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-09-10
-                </div>
-                <div class="td">
-                  Espresso
-                </div>
-                <div class="td">
-                  2
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-08-28
-                </div>
-                <div class="td">
-                  2x Cappuccino
-                </div>
-                <div class="td">
-                  4
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-08-22
-                </div>
-                <div class="td">
-                  Latte
-                </div>
-                <div class="td">
-                  3
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-08-15
-                </div>
-                <div class="td">
-                  2x Mocha
-                </div>
-                <div class="td">
-                  5
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-08-10
-                </div>
-                <div class="td">
-                  Americano
-                </div>
-                <div class="td">
-                  2
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-08-05
-                </div>
-                <div class="td">
-                  2x Chai Tea
-                </div>
-                <div class="td">
-                  6
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-08-02
-                </div>
-                <div class="td">
-                  Iced Coffee
-                </div>
-                <div class="td">
-                  3
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  2023-07-25
-                </div>
-                <div class="td">
-                  Green Tea
-                </div>
-                <div class="td">
-                  1
-                </div>
-              </div>
-            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Order details</th>
+                  <th>Credits used</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023-09-16</td>
+                  <td>2x Black Coffee</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>2023-09-10</td>
+                  <td>Espresso</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>2023-08-28</td>
+                  <td>2x Cappuccino</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>2023-08-22</td>
+                  <td>Latte</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>2023-08-15</td>
+                  <td>2x Mocha</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>2023-08-10</td>
+                  <td>Americano</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>2023-08-05</td>
+                  <td>2x Chai Tea</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>2023-08-02</td>
+                  <td>Iced Coffee</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>2023-07-25</td>
+                  <td>Green Tea</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+
             <p>You currently have <b>20</b> credits in your account. <br>
               <span class="color-gray">As part of your <b>Freelancer</b> plan, you will receive 10 credits
                 monthly.</span>

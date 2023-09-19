@@ -27,11 +27,16 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+  line-height: 1.4;
   margin: 0;
 }
 
+h1 {
+  font-size: var(--font-size-h1);
+}
+
 h2 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-h2);
 }
 
 pre {
@@ -42,18 +47,23 @@ main {
   grid-column: span 12;
 }
 
-button {
+button,
+.button {
   background: var(--blue);
   padding: calc(var(--padding-xs)*1.5) calc(var(--padding-sm)*1.5);
   border: none;
   border-radius: var(--button-radius);
   text-align: center;
   font-weight: 700;
+  font-size: var(--font-size-sm);
   transition: all .2s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--dark-gray);
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background: color-mix(in srgb, var(--blue) 50%, white);
   transition: all .2s ease;
 }
@@ -99,27 +109,22 @@ textarea:focus{
   margin-bottom: 8vh;
 }
 
-header h1 {
-  font-size: var(--font-size-xl);
+header {
+  z-index: 995;
+  position: relative;
 }
+
+#main-header {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center 62%;
+}
+
 
 header p {
   margin: 0;
   font-size: var(--font-size-md);
 }
-
-header {
-  /* border-color: pink; */
-  /* border-style: solid; */
-  /* background-image: url("https://i.ibb.co/DDzyLy7/ilyuza-mingazova-Ha-TIYO87q-WQ-unsplash.jpg"); */
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
-  background-position: center 62%;
-  /* min-height: 400px; */
-  z-index: 997;
-  /* padding-bottom: 5vh; */
-}
-
 
 .header-content {
   align-self: end;
@@ -177,6 +182,11 @@ nav #logo {
   text-align: center;
 }
 
+nav #logo a {
+  text-decoration: none;
+  color: var(--almost-white);
+}
+
 nav ul {
   list-style: none;
   padding: 0px;
@@ -198,8 +208,6 @@ nav ul li a {
 
 nav ul li a.active {
   color: var(--blue);
-
-
 }
 
 /* Background for nav when scrolling, hidden behind hero-image */
@@ -249,7 +257,9 @@ nav ul li a.active {
 }
 
 
-
+.landing-section {
+  padding: var(--padding-landing-section);
+}
 
 .top-container {
   display: grid;
@@ -258,19 +268,6 @@ nav ul li a.active {
   padding: calc(var(--spacer)*6) 0;
 }
 
-/* Padding */
-
-.landing-section {
-  padding: var(--padding-sm) 0;
-}
-
-.brew {
-  margin-top: 50px;
-}
-
-#content-intro {
-  padding: var(--padding-md) inherit;
-}
 
 /* Prevent selecting text */
 .prevent-select {
@@ -281,10 +278,6 @@ nav ul li a.active {
 }
 
 #content-image {
-  grid-column: span var(--columns);
-  /* margin-top: 100px;*/
-  /* max-height: 450px; */
-  /* overflow: hidden;*/
   max-width: 100%;
 }
 
@@ -298,30 +291,27 @@ nav ul li a.active {
 
 #content-stats p {
   font-family: var(--font-paragraph);
+  margin: 0 0 var(--padding-lg) 0;
 }
 
 #content-stats h2 {
-  font-size: var(--font-size-xl);
+  margin-top: var(--padding-md);
 }
+
 
 #content-stats .content-stats-data {
   font-size: 2em;
   font-family: var(--font-heading);
-  margin: 0;
+  margin: 0 0 var(--padding-md) 0;
 }
 
 /* ----- COFFEE CONTENT START --- */
 
 #content-coffee {
   font-family: var(--font-heading);
-  padding: calc(var(--spacer)*6) 0;
   grid-column: span var(--columns);
-  display: flex;
-  flex-flow: row wrap;
   background-image: url("../img/coffee-beans.jpg");
   background-size: cover;
-  /* min-height: 300px; */
-  justify-content: center;
 }
 
 .coffee-text {
@@ -331,6 +321,10 @@ nav ul li a.active {
 .content-stats-data,
 .coffee-text-data {
   font-size: var(--font-size-lg);
+}
+
+.coffee-text-data p {
+  margin: var(--padding-sm);
 }
 
 .coffe-content-size {
@@ -358,7 +352,8 @@ nav ul li a.active {
   width: 200px;
 }
 
-.gallery-img img {
+.gallery-img img,
+.gallery-img picture {
   aspect-ratio: 1 / 1;
   width: 100%;
   height: 100%;
@@ -370,15 +365,14 @@ nav ul li a.active {
   z-index: -1;
   width: 100%;
   min-width: 600px;
-
 }
 
 .gallery-img:nth-child(2) {
-  padding: var(--padding-md) var(--padding-md) var(--padding-sm) var(--padding-md)
+  padding: var(--padding-sm) var(--padding-sm) var(--padding-xs) var(--padding-sm)
 }
 
 .gallery-img:nth-child(3) {
-  padding: var(--padding-sm) var(--padding-md) var(--padding-md) var(--padding-md)
+  padding: var(--padding-xs) var(--padding-sm) var(--padding-sm) var(--padding-sm)
 }
 
 
@@ -416,6 +410,7 @@ footer ul {
 ----- FOOTER END-----*/
 
 @media screen and (min-width: 768px) {
+
   #gallery {
     flex-direction: row;
     align-items: normal;
@@ -461,9 +456,6 @@ footer ul {
   }
 
 
-  .landing-section {
-    padding: var(--padding-md);
-  }
 
 
   /* #### NAV #### */
@@ -504,23 +496,18 @@ footer ul {
   nav ul.right-menu {
     order: 2;
   }
+
 }
 
 
 @media screen and (min-width: 1140px) {
+
   .gallery-img {
     grid-column: span 4;
   }
 
-  .landing-section {
-    padding: var(--padding-xl);
+  #content-image {
+    max-width: 90%;
+    margin: auto;
   }
-}
-
-
-
-/* check out your new main cofeebranch!*/
-
-.header-two {
-  font-size: var(--font-size-xl);
 }
