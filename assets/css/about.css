@@ -12,3 +12,32 @@
     max-width: 100%;
 
 }
+
+.description {
+    border: none;
+   
+}
+
+.description img {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.spaces {
+
+}
+
+.spaces img {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.menu-text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-text img {
+    max-width: 100%;
+    padding: 20px;
+}
