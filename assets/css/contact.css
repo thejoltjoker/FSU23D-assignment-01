@@ -17,6 +17,10 @@ body {position: relative;}
     padding: var(--page-header-padding);
   }
 
+.contact-card {
+    background-color: color-mix(in srgb, var(--dark-gray) 95%, white); 
+    border-radius: 5px;
+}
   .totop-container {
     position: absolute;
     top: 0;
