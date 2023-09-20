@@ -120,3 +120,30 @@ body {position: relative;}
     top: 88vh;
 
   }
+
+  #workers {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+   
+  }
+
+  #workers .worker {
+    background:color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
+    flex-basis: 45%;
+border-radius: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    #workers .worker {
+    flex-basis: 20%;
+    }
+  }
+  #workers .worker .worker-image-holder{
+    border-radius:50%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+  }
+  #workers .worker .worker-image-holder img{
+    width: 100%;
+
+  }
