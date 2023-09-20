@@ -1,0 +1,53 @@
+#about-intro {
+    font-family: var(--font-heading);
+    padding: calc(var(--spacer)*6) 0;
+    grid-column: span var(--columns);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+.our-story img {
+    max-width: 100%;
+
+}
+
+.description {
+    border: none;
+   
+}
+
+.description img {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.spaces {
+
+}
+
+.spaces img {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.menu-text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-text img {
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1140px) {
+
+}
