@@ -3,11 +3,11 @@ html {
 }
 body {position: relative;}
 
-#map img {
+#map  {
     text-align: center;
 }
 
-#map img {
+#map-holder img {
     width: 100%;
     max-width: 600px;
 }
@@ -72,6 +72,7 @@ body {position: relative;}
     .message-box-grid-sm-6{
         grid-column:auto/ span 6;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -119,4 +120,71 @@ body {position: relative;}
     position: sticky;
     top: 88vh;
 
+  }
+
+  #workers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
+   
+  }
+
+  #workers .worker {
+    background:color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
+    flex-shrink: 1;
+    border-radius: 5px;
+    text-align: center;
+    overflow: auto;
+
+  }
+
+  @media screen and (min-width: 568px)and (max-width: 768px) {
+    #workers .worker {
+    flex-basis: 40%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    #workers {
+        flex-wrap: nowrap;
+  
+    }
+    #contact-information {
+        order:1;
+    }
+    #message-box {
+        order:2;
+    }
+    #the-people {
+        order:3;
+    }
+    #map {
+        order:4;
+    }
+  }
+@media screen and (min-width: 1140px) {
+    #message-box {
+        order:1;
+    }
+    #contact-information {
+        order:2;
+    }
+    #map {
+        order:3;
+    }
+    #the-people {
+        order:4;
+    }
+
+}
+
+  #workers .worker .worker-image-holder{
+    border-radius:50%;
+    overflow: hidden;
+    max-width: 200px;
+    aspect-ratio: 1;
+  }
+  #workers .worker .worker-image-holder img{
+width: 100%;
   }
