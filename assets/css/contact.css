@@ -1,3 +1,53 @@
+html {
+    scroll-behavior:smooth;
+}
+body {position: relative;}
+
+
 #map {
     width: 100%;
+    max-width: 600px;
 }
+
+
+#contact-header {
+    background-image: url("../img/contact-header.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    padding: var(--page-header-padding);
+  }
+  #contact-information-table {
+    width: 100%;
+  }
+#contact-information-table th{
+    text-align: left;
+    border-bottom: 2px dotted #ccc;
+}
+#contact-information-table th:first-child {
+    width:20px;
+}
+.contact-card {
+    background-color: color-mix(in srgb, var(--dark-gray) 95%, white); 
+    border-radius: 5px;
+}
+  .totop-container {
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100%;
+  }
+  
+  .totop-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+  }
+  
+  .totop-container a {
+    margin:10px;
+    opacity: 0.8;
+    position: sticky;
+    top: 88vh;
+
+  }

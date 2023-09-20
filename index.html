@@ -2,31 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kanit:wght@600&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-  <title>GIT Cafe</title>
+  <title>GIT Cafe - Coffee and Coding</title>
+  <meta name="description" content="Discover the perfect blend of technology and leisure at Git Cafe. 
+    Dive into coding, gaming, and collaboration in our tech-savvy space. 
+    Enjoy artisanal coffee while you code, network, and game in style!">
+
 </head>
 
 <body>
   <!-- Navbar -->
   <div class="grid">
     <!-- Checkbox to handle menu trigger in mobile -->
-    <input type="checkbox" id="menu-toggle" />
+    <input type="checkbox" id="menu-toggle">
     <nav>
       <!-- Logo-->
       <h1 id="logo"><a href="https://thejoltjoker.github.io/FSU23D-assignment-01/">GIT Cafe</a></h1>
@@ -51,7 +55,7 @@
   <!-- Background for nav, hidden behind header-->
   <div id="nav-bg"></div>
 
-  <header id="main-header">
+  <header id="main-header" title="Two smiling young women, in front of a computer in a coffee shop">
     <div class="container-fluid">
       <div class="container">
         <div id="hero" class="grid">
@@ -115,11 +119,15 @@
     </section>
     <section id="content-stats" class="landing-section">
       <div class="container-fluid">
-        <section id="content-image">
+        <div id="content-image">
           <div class="code-img">
-            <img src="./assets/img/hacker.jpg" alt="Coding and drinking coffee" />
+            <picture>
+              <source srcset="./assets/img/hacker.webp" type="image/webp">
+              <source srcset="./assets/img/hacker.jpg" type="image/jpeg">
+              <img src="./assets/img/hacker.jpg" alt="Coding and drinking coffee">
+            </picture>
           </div>
-        </section>
+        </div>
       </div>
       <div class="container">
         <div class="grid">
@@ -153,8 +161,9 @@
 
           </div>
         </div>
+      </div>
     </section>
-    <section id="content-coffee" class="landing-section">
+    <section id="content-coffee" class="landing-section" title="Coffee beans">
       <div class="container-fluid">
         <div class="container">
 
@@ -200,13 +209,26 @@
       <div class="container">
         <section id="gallery" class="grid">
           <div class="gallery-img">
-            <img src="https://i.pinimg.com/564x/48/c7/62/48c762c206c1aae6d36532b559511638.jpg" alt="Our work space" />
+            <picture>
+              <source srcset="./assets/img/gallery-seats.webp" type="image/webp">
+              <source srcset="./assets/img/gallery-seats.jpg" type="image/jpeg">
+              <img src="./assets/img/gallery-seats.jpg" alt="Coffee shop tables equipped with charging outlets">
+            </picture>
           </div>
           <div class="gallery-img">
-            <img src="https://i.pinimg.com/564x/85/c0/10/85c010bb0c1cfae95a4795428b508051.jpg" alt="A cup of coffee" />
+            <picture>
+              <source srcset="./assets/img/gallery-drinks.webp" type="image/webp">
+              <source srcset="./assets/img/gallery-drinks.jpg" type="image/jpeg">
+              <img src="./assets/img/gallery-drinks.jpg"
+                alt="Three coffee drinks with the labels, Matcha bomb, Mint bomb and Choco bomb">
+            </picture>
           </div>
           <div class="gallery-img">
-            <img src="https://i.pinimg.com/564x/44/70/15/4470159150fe5d80a1ad88fcee3284dd.jpg" alt="Lounge area" />
+            <picture>
+              <source srcset="./assets/img/gallery-workspace.webp" type="image/webp">
+              <source srcset="./assets/img/gallery-workspace.jpg" type="image/jpeg">
+              <img src="./assets/img/gallery-workspace.jpg" alt="Coworking lounge area">
+            </picture>
           </div>
         </section>
       </div>
@@ -240,7 +262,9 @@
       </div>
     </div>
   </footer>
-
+  <div class="totop-container">
+    <a href="#top"><button>&#8657</button></a>
+  </div>
 </body>
 
 </html>
