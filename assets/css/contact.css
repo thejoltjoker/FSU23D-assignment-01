@@ -3,7 +3,7 @@ html {
 }
 body {position: relative;}
 
-#map img {
+#map  {
     text-align: center;
 }
 
@@ -123,27 +123,41 @@ body {position: relative;}
 
   #workers {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
    
   }
 
   #workers .worker {
     background:color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
-    flex-basis: 45%;
-border-radius: 5px;
+    flex-shrink: 1;
+    border-radius: 5px;
+    text-align: center;
+    overflow: auto;
+
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 568px)and (max-width: 768px) {
     #workers .worker {
-    flex-basis: 20%;
+    flex-basis: 40%;
     }
   }
+  @media screen and (min-width: 768px) {
+    #workers {
+        flex-wrap: nowrap;
+  
+    }
+  }
+
+
   #workers .worker .worker-image-holder{
     border-radius:50%;
     overflow: hidden;
-    aspect-ratio: 1 / 1;
+    max-width: 200px;
+    aspect-ratio: 1;
   }
   #workers .worker .worker-image-holder img{
-    width: 100%;
-
+width: 100%;
   }
