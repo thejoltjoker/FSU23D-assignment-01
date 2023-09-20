@@ -2,9 +2,6 @@
   background-image: url("../img/about-header.jpg");
 }
 
-#about-mobile {
-}
-
 .our-story img {
   max-width: 100%;
   margin-top: 20px;
@@ -12,18 +9,6 @@
 
 #story-margin {
     margin-left: 20px;
-}
-
-#story-order-1 {
-    order: ;
-}
-
-#story-order-2 {
-    order: ;
-}
-
-#story-order-3 {
-    order: ;
 }
 
 .description img {
@@ -34,14 +19,6 @@
 
 .description ul {
   padding-left: 12px;
-}
-
-.spaces {
-}
-
-.spaces img {
-  max-width: 100%;
-  padding: 20px;
 }
 
 .menu-text {
@@ -97,7 +74,6 @@
     max-width: 55%;
     order: 1;
   }
-
   
   .description img {
     display: block;
@@ -156,7 +132,6 @@
   }
   #text-space {
     max-width: 30%;
-
     order: 1;
   }
 
