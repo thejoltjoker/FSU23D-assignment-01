@@ -8,13 +8,14 @@
   #event-section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: var(--padding-md);
      
       
   }
 
   .event-col{
     grid-column: auto / span 3;
-    
+    position: relative;
   }
 
 @media screen and (min-width: 768px){
@@ -30,16 +31,61 @@
 
 img{
     max-width: 100%;
+    border-radius: 5%;
+   
+   
+}
+
+h2{
+    font-size: --font-size-h2;
 }
 
 .event-card{
   
     padding: var(--padding-md);
-    border: solid black;
-    border-radius: 2%;
+    /* border: solid color-mix(in srgb, var(--dark-gray) 95%, var(--almost-white)); */
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     height: 100%;
+    background: var(--footer-color); 
     
+   
 }
 
+.event-img{
+    position: relative;
+}
+
+.card-img-text{
+    color: var(--almost-white);
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    align-items:center ;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.event-button{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    top: 0;
+    left: 0;
+    align-items:flex-end ;
+    justify-content:center;
+    z-index: 1;
+}
+
+.event-body{
+    position: relative;
+}
+  
