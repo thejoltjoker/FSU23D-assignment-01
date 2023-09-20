@@ -1,182 +1,139 @@
 #about-header {
-    background-image: url("../img/about-header.jpg");
+  background-image: url("../img/about-header.jpg");
 }
 
 #about-mobile {
-
 }
 
-/*#about-intro {
-    font-family: var(--font-heading);
-
-    grid-column: span var(--columns);
-  
-  }
-*/
 .our-story img {
-    max-width: 100%;
-    margin-top: 20px;
+  max-width: 100%;
+  margin-top: 20px;
 }
-
-#story-margin {
-    margin-top: 20px;
-    
-    padding-top: 20px;
-}
-
-/*#story-text {
-    margin-top: auto;
-    margin-bottom: auto;
-}*/
-
-
 
 .description img {
-    display: none;
-    max-width: 100%;
-    padding: 20px;
+  display: none;
+  max-width: 100%;
+  padding: 20px;
 }
 
 .description ul {
-    padding-left: 12px;
+  padding-left: 12px;
 }
 
-
 .spaces {
-
 }
 
 .spaces img {
-    max-width: 100%;
-    padding: 20px;
+  max-width: 100%;
+  padding: 20px;
 }
 
 .menu-text {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .menu-text img {
-    max-width: 100%;
-    padding: 20px;
+  max-width: 100%;
+  padding: 20px;
 }
 
-
 #about-space {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .space-box {
-    /*border: 1px plum solid;*/
-    max-width: 49%;
-    order: 0;
+  max-width: 49%;
+  order: 0;
 }
 
 .space-box img {
-    max-width: 100%;
-    
+  max-width: 100%;
 }
 #text-space {
-    max-width: 100%;
-    /*border: lightgreen 1px solid;*/
-    order: -1;
+  max-width: 100%;
+
+  order: -1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1139px) {
-
-    #about-space {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-/*        border: solid white 1px;*/
-    }
-    
-    .space-box {
-        /*border: 1px plum solid;*/
-        max-width: 20%;
-        order: 0;
-        
-    }
-    
-    .space-box img {
-        max-width: 100%;
-    }
-    #text-space {
-        max-width: 55%;
-        /*border: lightgreen 1px solid;*/
-        order: 1;
-    }
-
-    .description img {
-        display: block;
-      
-    }
-
-    #desc-img {
-        display: none;
-    }
-
-    #about-gallery {
-        background-size: cover;
-        background-image: url(../img/coffee-pour.jpg);
-        background-position: center;
-    }
-
-    .description {
-        background-color: rgba(34, 46, 75, 0.697);
-        padding: 10px;
-    }
-    /*
-    #about-space {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: flex-start;
-    }*/
-
-
-}
-
-@media screen and (min-width: 1140px) {
-
-
-   .description img {
-    display: block;
-   }
-
-   #desc-img {
-    display: block;
-}
-#about-space {
+  #about-space {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-/*        border: solid white 1px;*/
+  }
+
+  .space-box {
+    max-width: 20%;
+    order: 0;
+  }
+
+  .space-box img {
+    max-width: 100%;
+  }
+  #text-space {
+    max-width: 55%;
+    order: 1;
+  }
+
+  .description img {
+    display: block;
+  }
+
+  #desc-img {
+    display: none;
+  }
+
+  #story-margin {
+    margin-top: 10%;
+  }
+
+  #about-gallery {
+    background-size: cover;
+    background-image: url(../img/coffee-pour.jpg);
+    background-position: center;
+  }
+
+  .description {
+    background-color: rgba(34, 46, 75, 0.697);
+    padding: 10px;
+  }
 }
 
-.space-box {
-    /*border: 1px plum solid;*/
+@media screen and (min-width: 1140px) {
+  .description img {
+    display: block;
+  }
+
+  #desc-img {
+    display: block;
+  }
+  #about-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .space-box {
     max-width: 30%;
     order: 0;
-    
-}
+  }
 
-.space-box img {
+  .space-box img {
     max-width: 100%;
-}
-#text-space {
+  }
+  #text-space {
     max-width: 30%;
-    /*border: lightgreen 1px solid;*/
+
     order: 1;
-}
+  }
 
-#space-order {
+  #space-order {
     order: 2;
-}
-
+  }
 }
