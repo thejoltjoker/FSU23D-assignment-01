@@ -45,8 +45,8 @@
             <!-- Right menu -->
             <ul class="right-menu">
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a class="active" href="account.html">Account</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
             </ul>
             <!-- Label  for the menu trigger-->
             <label id="menu-toggle-label" for="menu-toggle"></label>
@@ -57,14 +57,15 @@
 
     <!-- Background for nav, hidden behind header-->
     <div id="nav-bg"></div>
-    <header class="container-fluid col-12">
-        <div class="container">
-          <div id="hero" class="grid">
-            <div id="hero-content" class="col-12">
-
-              <h1>Get Shi*t done </h1>
-              <p>Unite, Code, Game, Create - The ultimate space for working remotely.</p>
-              <p>Come in for a coffee or connect with your peers.</p>
+    <header id="contact-header">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="grid">
+              <div class="header-content col-12">
+                <h1>GIT Cafe Contact</h1>
+                <p>Unite, Code, Game, Create - The ultimate space for working remotely.</p>
+                <p>Come in for a coffee or connect with your peers.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -74,45 +75,53 @@
     <main id="account-main">
         <div class="container">
             <div class="grid">
-              <div class="col-12 col-md-4">
-                <section>
-                    <h3>Send us a message</h3>
-           <div class="table">
-           <div class="tr"><div class="th">Your name:</div></div>
-           <div class="tr"><div class="td"><input type="text" name="name" value="John Doe"></div></div>
-           <div class="tr"><div class="th">Your email:</div></div>
-           <div class="tr"><div class="td"><input type="text" name="name" value="John Doe"></div></div>
-           <div class="tr"><div class="th">Subject</div></div>
-           <div class="tr"><div class="td"><input type="text" name="name" value="John Doe"></div></div>
-           <div class="tr"><div class="th">Message:</div></div>
-           <div class="tr"><div class="td"><textarea></textarea></div></div>
-           <div class="tr"><div class="td"><button>Send</button></div></div>
-           </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <section class="mt-xl mb-xl">
+                    <h1>Send message</h1>
+                    <div class=" mt-sm contact-card p-sm">
+                    <form>
+                    <label class="" for ="name-input"><b>Your name:</b></label>
+                     <input class="mb-sm" type="text" id="name-input" name="name" placeholder="John Doe">
+                       <label class="" for ="email-input"><b>Your email:</b></label>
+                        <input  class="mb-sm" type="text" id="email-input" name="email" placeholder="johndoe@mail.com">
+                        <label for ="subject-input"><b>Subject:</b></label>
+                        <input  class="mb-sm" type="text" id="subject-input" name="subject" placeholder="Subject">
+                        <label for ="message-input"><b>Message:</b></label>
+                        <textarea  class="mb-sm" id="message-input" name="message" placeholder="message"></textarea>
+                        <button id="send-message">Send</button>
+                    </form>
 
-                
+           
             </section>
               </div> 
-              <div class="col-12 col-md-4">
-                <section>
-                <h3>Contact information</h3>
-                <div class="table">
-                    <div class="tr"><div class="th">Phone number:</div></div>
-                    <div class="tr"><div class="td">+123456789</div></div>
-                    <div class="tr"><div class="th">Email:</div></div>
-                    <div class="tr"><div class="td">info@gitcafe.com</div></div>
-                    <div class="tr"><div class="th">Adress:</div></div>
-                    <div class="tr"><div class="td">Git cafe <br> Centralgatan 29<br>987 65 Stockborg</div></div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <section class="mt-xl mb-xl">
+                <h1>Contact</h1>
+                <div class=" mt-sm contact-card p-sm">
+                <table id="contact-information-table">
+                   <tr><th>&#9742;</th><th> Phone number:</th></tr>
+                   <tr><td colspan="2">+123456789</td></tr>
 
-                    </div>
+                   <tr><th>&#9993;</th><th>Email:</th></tr>
+                    <tr><td colspan="2">info@gitcafe.com</td></tr>
+
+                    <tr><th>&#128506;</th><th>Adress:</th></tr>
+                    <tr><td  colspan="2">Git cafe </td></tr> 
+                    <tr><td  colspan="2">Centralgatan 29</td></tr>
+                    <tr><td  colspan="2">987 65 Stockborg</td></tr>
+                    </table>
+                </div>
                 </section>
               </div> 
-              <div class="col-12 col-md-4">
-                <section>
-                <h3>Map</h3>
-                <img src="assets/img/gitcafemap.png" id="map">
+              <div class="col-12 col-lg-4">
+                <section class="mt-xl mb-xl">
+                <h1>Map</h1>
+            
+                <div class=" mt-sm contact-card p-sm">
+                <img src="assets/img/gitcafemap.png" id="map"></div>
                 </section>
               </div> 
-    
+
     </main>
 
         <footer>
@@ -144,7 +153,9 @@
         </footer>
 
         </div>
-
+        <div class="totop-container">
+            <a href="#top"><button>&#8657</button></a>
+          </div>
 </body>
 
 
