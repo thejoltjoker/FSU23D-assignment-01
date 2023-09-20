@@ -22,6 +22,9 @@
   --main-header-padding: 60vh 0 0;
   --page-header-padding: 20vh 0 0;
 
+  /* Navbar */
+  --navbar-min-height: 60px;
+
   /* Colors */
   --white: #fff;
   --black: #000;
