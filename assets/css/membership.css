@@ -17,7 +17,11 @@
 .pmember {
     text-align: left;
     padding: 5px;
-    }
+   }
+
+.pmember {
+    display: none;
+   }
 
 /* **************** Header  END ******************** */
 
@@ -55,6 +59,11 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 50px;
+}
+
+.button-tablet
+{
+   display: none;
 }
 
 li {
@@ -160,6 +169,10 @@ font-size: 4rem;
     .headerh1 {
       font-size: 4em;
     }
+
+    .pmember {
+      display:block
+     }
   
     .textcontainer {
       padding: 7em;
@@ -177,6 +190,11 @@ font-size: 4rem;
       background: rgb(19, 24, 24);
       border: 1px solid white;
       border-radius: 20px;
+  }
+
+  .button-tablet
+  {
+     align-self: center;
   }
 
   .li-subs {
@@ -237,6 +255,11 @@ font-size: 4rem;
       display: list-item;
     }
 
+    .button-tablet
+    {
+     display: none;
+    }
+    
     #box-1 {
       order: 2;
       display: block;
