@@ -65,8 +65,7 @@
         <div class="grid">
           <div class="header-content col-12">
             <h1>GIT Cafe Account</h1>
-            <p>Unite, Code, Game, Create - The ultimate space for working remotely.</p>
-            <p>Come in for a coffee or connect with your peers.</p>
+            <p>Change your account settings or refill your GC card.</p>
           </div>
         </div>
       </div>
@@ -81,86 +80,87 @@
 
           <section id="account-profile">
             <h2>Profile</h2>
-            <div class="profile-details">
-              <div class="profile-details-row">
-                <div class="profile-details-label">
-                  Profile Picture:
-                </div>
-                <div class="profile-details-field">
-                  <div class="profile-picture-wrapper">
-                    <div class="account-profile-picture">
-                      <div class="account-profile-picture-cover">
-                        Click here to change profile picture
+            <form action="./account.html" method="get">
+              <div class="profile-details">
+                <div class="profile-details-row">
+                  <div class="profile-details-label">
+                    Profile Picture:
+                  </div>
+                  <div class="profile-details-field">
+                    <div class="profile-picture-wrapper">
+                      <div class="account-profile-picture">
+                        <div class="account-profile-picture-cover">
+                          Click here to change profile picture
+                        </div>
+                        <img src="http://placekitten.com/200/200" alt="">
                       </div>
-                      <img src="http://placekitten.com/200/200" alt="">
-                    </div>
-                    <button class="profile-picture-button">Change profile picture</button>
-                  </div>
-                </div>
-              </div>
-              <div class="profile-details-row">
-                <div class="profile-details-label">
-                  Name:
-                </div>
-                <div class="profile-details-field">
-                  <input type="text" name="name" value="John Doe">
-                </div>
-              </div>
-              <div class="profile-details-row">
-                <div class="profile-details-label">
-                  Username:
-                </div>
-                <div class="profile-details-field">
-                  <input type="text" name="username" value="@johndope">
-                </div>
-              </div>
-              <div class="profile-details-row">
-                <br>
-              </div>
-              <div class="profile-details-row">
-                <div class="profile-details-label">
-                  Email:
-                </div>
-                <div class="profile-details-field">
-                  <input type="email" name="email" value="john.doe@example.com">
-                </div>
-              </div>
-              <div class="profile-details-row">
-                <div class="profile-details-label">
-                  Phone Number:
-                </div>
-                <div class="profile-details-field">
-                  <input type="tel" name="name" value="+1 123-456-7890">
-                </div>
-              </div>
-              <div class="profile-details-row">
-                <br>
-              </div>
-              <div class="profile-details-row">
-                <div class="profile-details-label">
-                  Address:
-                </div>
-                <div class="profile-details-field">
-                  <input type="text" name="address" value="Streetname 123">
-                </div>
-              </div>
-              <div class="profile-details-row">
-                <div class="profile-details-label">
-                </div>
-                <div class="profile-details-field">
-                  <div class="grid">
-                    <div class="col-4">
-                      <input type="text" name="zip-code" value="45678">
-                    </div>
-                    <div class="col-8">
-                      <input type="text" name="city" value="City">
+                      <button class="profile-picture-button">Change profile picture</button>
                     </div>
                   </div>
                 </div>
+                <div class="profile-details-row">
+                  <div class="profile-details-label">
+                    <label for="name">Name:</label>
+                  </div>
+                  <div class="profile-details-field">
+                    <input type="text" name="name" value="John Doe">
+                  </div>
+                </div>
+                <div class="profile-details-row">
+                  <div class="profile-details-label">
+                    <label for="username">Username:</label>
+                  </div>
+                  <div class="profile-details-field">
+                    <input type="text" name="username" value="@johndope">
+                  </div>
+                </div>
+                <div class="profile-details-row">
+                  <br>
+                </div>
+                <div class="profile-details-row">
+                  <div class="profile-details-label">
+                    <label for="email">E-mail:</label>
+                  </div>
+                  <div class="profile-details-field">
+                    <input type="email" name="email" value="john.doe@example.com">
+                  </div>
+                </div>
+                <div class="profile-details-row">
+                  <div class="profile-details-label">
+                    <label for="phone">Phone number:</label>
+                  </div>
+                  <div class="profile-details-field">
+                    <input type="tel" name="phone" value="+1 123-456-7890">
+                  </div>
+                </div>
+                <div class="profile-details-row">
+                  <br>
+                </div>
+                <div class="profile-details-row">
+                  <div class="profile-details-label">
+                    <label for="street">Address:</label>
+                  </div>
+                  <div class="profile-details-field">
+                    <input type="text" name="street" value="Streetname 123">
+                  </div>
+                </div>
+                <div class="profile-details-row">
+                  <div class="profile-details-label">
+                  </div>
+                  <div class="profile-details-field">
+                    <div class="grid">
+                      <div class="col-4">
+                        <input type="text" name="zip-code" value="45678">
+                      </div>
+                      <div class="col-8">
+                        <input type="text" name="city" value="City">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <button>Save profile</button>
+              <button type="submit">Save profile</button>
+            </form>
           </section>
 
         </div>
@@ -284,7 +284,5 @@
   </div>
 
 </body>
-
-
 
 </html>
