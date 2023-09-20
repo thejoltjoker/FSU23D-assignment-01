@@ -73,7 +73,7 @@ section#account-profile {
 
 .profile-details {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   margin: var(--padding-sm) 0;
 }
 
