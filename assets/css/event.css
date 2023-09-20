@@ -8,13 +8,14 @@
   #event-section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: var(--padding-md);
      
       
   }
 
   .event-col{
     grid-column: auto / span 3;
-    
+    position: relative;
   }
 
 @media screen and (min-width: 768px){
@@ -35,16 +36,20 @@ img{
    
 }
 
+h2{
+    font-size: --font-size-h2;
+}
+
 .event-card{
   
     padding: var(--padding-md);
-    border: solid color-mix(in srgb, var(--dark-gray) 95%, var(--almost-white));
+    /* border: solid color-mix(in srgb, var(--dark-gray) 95%, var(--almost-white)); */
     border-radius: 5%;
     display: flex;
     flex-direction: column;
     height: 100%;
     background: var(--footer-color); 
-     
+    
    
 }
 
