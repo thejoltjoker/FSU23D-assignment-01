@@ -1,0 +1,45 @@
+#event-header {
+    
+    background-size: cover;
+    background-position: center 62%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/eventImg/HeroWEB.jpg);
+  }
+
+  #event-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     
+      
+  }
+
+  .event-col{
+    grid-column: auto / span 3;
+    
+  }
+
+@media screen and (min-width: 768px){
+
+    .event-col{
+        grid-column: auto / span 1;
+        padding: var(--padding-sm);
+        
+    }
+
+}
+    
+
+img{
+    max-width: 100%;
+}
+
+.event-card{
+  
+    padding: var(--padding-md);
+    border: solid black;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
