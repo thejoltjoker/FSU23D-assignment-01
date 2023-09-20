@@ -151,7 +151,7 @@
 
 .test-box {
     /*border: 1px plum solid;*/
-    max-width: 48%;
+    max-width: 30%;
     order: 0;
     
 }
@@ -160,9 +160,13 @@
     max-width: 100%;
 }
 #dumb-child {
-    max-width: 100%;
+    max-width: 30%;
     /*border: lightgreen 1px solid;*/
     order: 1;
+}
+
+#space-order {
+    order: 2;
 }
 
 }
