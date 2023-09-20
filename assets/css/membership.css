@@ -10,13 +10,14 @@
 
  .textcontainer {
   padding: 2em;
-  margin-top: 7em;
+  
    }
 
-.h1member,
-.pmember {
+.h1member
+ {
     text-align: left;
     padding: 5px;
+    margin-top: 4rem;
    }
 
 .pmember {
@@ -171,7 +172,9 @@ font-size: 4rem;
     }
 
     .pmember {
-      display:block
+      display:block;
+      text-align: left;
+      padding: 5px;
      }
   
     .textcontainer {
@@ -194,6 +197,7 @@ font-size: 4rem;
 
   .button-tablet
   {
+    display: block;
      align-self: center;
   }
 
