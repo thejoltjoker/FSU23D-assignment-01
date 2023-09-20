@@ -21,6 +21,7 @@
 
     .event-col{
         grid-column: auto / span 1;
+        padding: var(--padding-sm);
         
     }
 
@@ -33,7 +34,7 @@ img{
 
 .event-card{
   
-    padding: var(--padding-sm);
+    padding: var(--padding-md);
     border: solid black;
     border-radius: 2%;
     display: flex;
@@ -41,3 +42,4 @@ img{
     height: 100%;
     
 }
+
