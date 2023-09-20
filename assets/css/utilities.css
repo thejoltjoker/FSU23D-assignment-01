@@ -5,6 +5,36 @@
   transition: all .2s ease;
 }
 /* Spacings */
+.m-xl{
+  margin: var(--padding-xl);
+}
+.m-lg{
+  margin: var(--padding-lg);
+}
+.m-md{
+  margin: var(--padding-md);
+}
+.m-sm{
+  margin: var(--padding-sm);
+}
+.m-xs{
+  margin: var(--padding-xs);
+}
+.p-xl{
+  padding: var(--padding-xl);
+}
+.p-lg{
+  padding: var(--padding-lg);
+}
+.p-md{
+  padding: var(--padding-md);
+}
+.p-sm{
+  padding: var(--padding-sm);
+}
+.p-xs{
+  padding: var(--padding-xs);
+}
 
 .mt-xl {
   margin-top: var(--padding-xl);
