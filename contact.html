@@ -75,26 +75,51 @@
     <main id="account-main">
         <div class="container">
             <div class="grid">
-              <div class="col-12 col-md-6 col-lg-4">
+              <div class="col-12 col-md-6 col-lg-5">
                 <section class="mt-xl mb-xl">
                     <h1>Send message</h1>
                     <div class=" mt-sm contact-card p-sm">
-                    <form>
-                    <label class="" for ="name-input"><b>Your name:</b></label>
-                     <input class="mb-sm" type="text" id="name-input" name="name" placeholder="John Doe">
-                       <label class="" for ="email-input"><b>Your email:</b></label>
-                        <input  class="mb-sm" type="text" id="email-input" name="email" placeholder="johndoe@mail.com">
-                        <label for ="subject-input"><b>Subject:</b></label>
-                        <input  class="mb-sm" type="text" id="subject-input" name="subject" placeholder="Subject">
-                        <label for ="message-input"><b>Message:</b></label>
-                        <textarea  class="mb-sm" id="message-input" name="message" placeholder="message"></textarea>
+                    <form class="message-box-grid">
+                    <div class="message-box-grid-6 message-box-grid-sm-3  pt-sm">
+                        <label class="" for ="name-input"><b>First name:</b></label>
+                        <input  type="text" id="name-input" name="firstname" placeholder="John">
+                    </div>
+                    <div class="message-box-grid-6 message-box-grid-sm-3  pt-sm">
+                        <label class="" for ="name-input"><b>Last name:</b></label>
+                         <input  type="text" id="name-input" name="lastname" placeholder="Doe">
+                        </div>
+                        <div class="message-box-grid-6  pt-sm">
+                        <label class="" for ="email-input"><b>Your email:</b></label>
+                            <input  type="text" id="email-input" name="email" placeholder="johndoe@mail.com">
+                    </div>
+                    <div class="message-box-grid-6  pt-sm">
+                        <b>Subject</b>
+                    </div>
+                    <div class="message-box-grid-6 message-box-grid-sm-2">
+                        <input type="radio" id="feedback" name="subject" value="feedback"  />
+                        <label for="feedback">Feedback</label>
+                    </div>
+                    <div class="message-box-grid-6 message-box-grid-sm-2">
+                        <input type="radio" id="work" name="subject" value="work"  />
+                        <label for="work">Work application</label>
+                    </div>
+                    <div class="message-box-grid-6 message-box-grid-sm-2 ">
+                        <input type="radio" id="other" name="subject" value="other" checked />
+                        <label for="other">Other</label>
+                    </div>
+                     <div class="message-box-grid-6 pt-sm">
+                        <label for ="message-input"><b>Other:</b></label>
+                        <textarea   id="message-input" name="message" placeholder="message"></textarea>
+                        </div>
+                        <div class="message-box-grid-6">
                         <button id="send-message">Send</button>
+                        </div>
                     </form>
 
            
             </section>
               </div> 
-              <div class="col-12 col-md-6 col-lg-4">
+              <div class="col-12 col-md-6 col-lg-3">
                 <section class="mt-xl mb-xl">
                 <h1>Contact</h1>
                 <div class=" mt-sm contact-card p-sm">
@@ -117,8 +142,8 @@
                 <section class="mt-xl mb-xl">
                 <h1>Map</h1>
             
-                <div class=" mt-sm contact-card p-sm">
-                <img src="assets/img/gitcafemap.png" id="map"></div>
+                <div class=" mt-sm contact-card p-sm" id="map">
+                <img src="assets/img/gitcafemap.png" ></div>
                 </section>
               </div> 
 
