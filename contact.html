@@ -79,34 +79,37 @@
                 <section class="mt-xl mb-xl">
                     <h1>Send message</h1>
                     <div class=" mt-sm contact-card p-sm">
-                    <form class="table mt-sm">
-                        <div class="tr"><div class="th"><label class="mt-lg" for ="name-input">Your name:</label></div></div>
-                        <div class="tr"><div class="td"><input type="text" id="name-input" name="name" placeholder="John Doe"></div></div>
-                        <div class="tr"><div class="th"><label class="mt-lg" for ="email-input">Your email:</label></div></div>
-                        <div class="tr"><div class="td"><input type="text" id="email-input" name="email" placeholder="johndoe@mail.com"></div></div>
-                        <div class="tr"><div class="th"><label for ="subject-input">Subject:</label></div></div>
-                        <div class="tr"><div class="td"><input type="text" id="subject-input" name="subject" placeholder="Subject"></div></div>
-                        <div class="tr"><div class="th"><label for ="message-input">Message:</label></div></div>
-                        <div class="tr"><div class="td"><textarea id="message-input" name="message" placeholder="message"></textarea></div></div>
-                        <div class="tr"><div class="td"><button class="mt-sm" id="send-message">Send</button></div></div>
+                    <form>
+                    <label class="" for ="name-input"><b>Your name:</b></label>
+                     <input class="mb-sm" type="text" id="name-input" name="name" placeholder="John Doe">
+                       <label class="" for ="email-input"><b>Your email:</b></label>
+                        <input  class="mb-sm" type="text" id="email-input" name="email" placeholder="johndoe@mail.com">
+                        <label for ="subject-input"><b>Subject:</b></label>
+                        <input  class="mb-sm" type="text" id="subject-input" name="subject" placeholder="Subject">
+                        <label for ="message-input"><b>Message:</b></label>
+                        <textarea  class="mb-sm" id="message-input" name="message" placeholder="message"></textarea>
+                        <button id="send-message">Send</button>
                     </form>
 
-                </div>
+           
             </section>
               </div> 
               <div class="col-12 col-md-6 col-lg-4">
                 <section class="mt-xl mb-xl">
                 <h1>Contact</h1>
                 <div class=" mt-sm contact-card p-sm">
-                <div class="table">
-                    <div class="tr"><div class="th">&#9742; Phone number:</div></div>
-                    <div class="tr"><div class="td">+123456789</div></div>
-                    <div class="tr"><div class="th">&#9993; Email:</div></div>
-                    <div class="tr"><div class="td">info@gitcafe.com</div></div>
-                    <div class="tr"><div class="th">&#128506; Adress:</div></div>
-                    <div class="tr"><div class="td">Git cafe <br> Centralgatan 29<br>987 65 Stockborg</div></div>
+                <table id="contact-information-table">
+                   <tr><th>&#9742;</th><th> Phone number:</th></tr>
+                   <tr><td colspan="2">+123456789</td></tr>
 
-                    </div>
+                   <tr><th>&#9993;</th><th>Email:</th></tr>
+                    <tr><td colspan="2">info@gitcafe.com</td></tr>
+
+                    <tr><th>&#128506;</th><th>Adress:</th></tr>
+                    <tr><td  colspan="2">Git cafe </td></tr> 
+                    <tr><td  colspan="2">Centralgatan 29</td></tr>
+                    <tr><td  colspan="2">987 65 Stockborg</td></tr>
+                    </table>
                 </div>
                 </section>
               </div> 
