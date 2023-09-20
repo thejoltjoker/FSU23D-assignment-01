@@ -1,186 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
-    
+
     <!-- Membership specific CSS -->
     <link rel="stylesheet" href="assets/css/membership.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kanit:wght@600&display=swap"
-      rel="stylesheet">
-  
-  
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kanit:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <title>Membership</title>
-</head>
-<body>
-    
-  <!-- Navbar -->
-  <div class="grid">
-    <!-- Checkbox to handle menu trigger in mobile -->
-    <input type="checkbox" id="menu-toggle" />
-    <nav>
-      <!-- Logo-->
-      <h1 id="logo"><a href="https://thejoltjoker.github.io/FSU23D-assignment-01/">GIT Cafe</a></h1>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="grid">
+      <!-- Checkbox to handle menu trigger in mobile -->
+      <input type="checkbox" id="menu-toggle" />
+      <nav>
+        <!-- Logo-->
+        <h1 id="logo">
+          <a href="https://thejoltjoker.github.io/FSU23D-assignment-01/"
+            >GIT Cafe</a
+          >
+        </h1>
 
-      <!-- Left Menu -->
-      <ul class="left-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a class="active" href="membership.html">Membership</a></li>
-      </ul>
-      <!-- Right menu -->
-      <ul class="right-menu">
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="account.html">Account</a></li>
-      </ul>
-      <!-- Label  for the menu trigger-->
-      <label id="menu-toggle-label" for="menu-toggle"></label>
-    </nav>
-  </div>
+        <!-- Left Menu -->
+        <ul class="left-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a class="active" href="membership.html">Membership</a></li>
+        </ul>
+        <!-- Right menu -->
+        <ul class="right-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+        <!-- Label  for the menu trigger-->
+        <label id="menu-toggle-label" for="menu-toggle"></label>
+      </nav>
+    </div>
 
-  <!-- Background for nav, hidden behind header-->
-  <div id="nav-bg"></div>
+    <!-- Background for nav, hidden behind header-->
+    <div id="nav-bg"></div>
 
-  <!-- HEADER START -->
+    <!-- HEADER START -->
     <header id="membership-header">
-        <div class="textcontainer">
-          <h1 class="h1member">GIT Membership Levels</h1>
-          <p class="pmember"> Meet, Drink, Collaborate, Succeed</p>
-        </div>
-
+      <div class="textcontainer">
+        <h1 class="h1member">GIT Membership Levels</h1>
+        <p class="pmember">Meet, Drink, Collaborate, Succeed</p>
+      </div>
     </header>
 
-<!-- HEADER END -->
+    <!-- HEADER END -->
 
+    <!-- 3x FLEXBOXES MEMBESHIP LEVELS  START-->
+    <main>
+      <div class="flexboxmember">
+        <div class="subitemsmember" class="item1-color">
+          <h2 class="header-levels">Freelancer</h2>
 
-<!-- 3x FLEXBOXES MEMBESHIP LEVELS  START-->
-<main>
-  <div class="flexboxmember">
-    <div class="subitemsmember" class="item1-color">
-<h2 class="header-levels">Freelancer</h2>
+          <ul class="listmember">
+            <li class="li-subs">Complimentary water</li>
+            <li class="li-subs">Telephone support, in Chinese only</li>
+            <li class="li-subs">15% discount in cafe</li>
+            <li class="li-subs">Paper & Pencil</li>
+            <li class="li-subs">Wifi</li>
+            <li class="li-subs">500Mb of Cloud storage</li>
+            <p class="price-membership">$19,99 / month</p>
+            <button class="button-tablet">Read more</button>
+            <button class="button-member">Subscribe</button>
+          </ul>
+        </div>
+        <div class="subitemsmember" class="item2-color">
+          <h2 class="header-levels">Nomad</h2>
+          <ul class="listmember">
+            <li class="li-subs">Freelancer benefits plus:</li>
+            <li class="li-subs">Online Support in any language</li>
+            <li class="li-subs">Complimentary DIY Coffee</li>
+            <li class="li-subs">Remote developer networking</li>
+            <li class="li-subs">Request seating in advance</li>
+            <li class="li-subs">2TB of Cloud Storage</li>
+            <p class="price-membership">$49,99 / month</p>
+            <button class="button-tablet">Read more</button>
+            <button class="button-member">Subscribe</button>
+          </ul>
+        </div>
 
-<ul class="listmember">
-  <li>Complimentary water</li>
-  <li>Telephone support, in Chinese only</li>
-  <li>15% discount in cafe</li>
-  <li>Paper & Pencil</li>
-  <li>Wifi</li>
-  <li>500Mb of Cloud storage</li>
-  <p class="price-membership">$19,99 / month</p>
-  <button class="button-member">Subscribe</button>
+        <div class="subitemsmember" class="item3-color">
+          <h2 class="header-levels">Stalker</h2>
 
-</ul>
-   </div>
-   <div class="subitemsmember" class="item2-color">
-     <h2 class="header-levels">Nomad</h2>
-       <ul class="listmember">
-        <li>Freelancer benefits plus:</li>
-        <li>Online Support in any language</li>
-        <li>Complimentary DIY Coffee</li>
-        <li>Remote developer networking</li>
-        <li>Request seating in advance</li>
-        <li>2TB of Cloud Storage</li>
-        <p class="price-membership">$49,99 / month</p>
-        <button class="button-member">Subscribe</button>
+          <ul class="listmember">
+            <li class="li-subs">Freelancer & Nomad benefits plus:</li>
+            <li class="li-subs">Complimentary coffee, tea, juice</li>
+            <li class="li-subs">Unlimited Jolt Cola</li>
+            <li class="li-subs">IRL Developer Networking</li>
+            <li class="li-subs">Reserve seating in advance</li>
+            <li class="li-subs">5TB of Cloud Storage</li>
+            <p class="price-membership">$89,99 / month</p>
+            <button class="button-tablet">Read more</button>
+            <button class="button-member">Subscribe</button>
+          </ul>
+        </div>
+      </div>
 
-        </ul>
-     
-    </div>
+      <!-- 3x FLEXBOXES MEMBESHIP LEVELS  END-->
 
-    
-    <div class="subitemsmember" class="item3-color">
-      <h2 class="header-levels">Stalker</h2>
+      <!-- GRIDBOX SELLING WORDS AND IMAGES START -->
 
-      <ul class="listmember">
-      <li>Freelancer & Nomad benefits plus:</li>
-      <li>Complimentary coffee, tea, juice</li>
-      <li>Unlimited Jolt Cola</li>
-      <li>IRL Developer Networking</li>
-      <li>Reserve seating in advance</li>
-      <li>5TB of Cloud Storage</li>
-      <p class="price-membership">$89,99 / month</p>
-      <button class="button-member">Subscribe</button>
+      <section id="membership1">
+        <div class="gridboxes-member">
+          <div id="box-1" class="boxes-member"></div>
 
-        </ul>
-    </div>
-  </div>
+          <div id="box-6-text" class="boxes-member">Work</div>
 
-<!-- 3x FLEXBOXES MEMBESHIP LEVELS  END-->
+          <div id="box-3" class="boxes-member"></div>
 
+          <div id="box-4-text" class="boxes-member">Enjoy</div>
 
+          <div id="box-5" class="boxes-member"></div>
 
-<!-- GRIDBOX SELLING WORDS AND IMAGES START -->
+          <div id="box-2-text" class="boxes-member">Collaborate</div>
+        </div>
+      </section>
+    </main>
 
-<section id="membership1">
-    <div class="gridboxes-member">
-      <div id="box-1" class="boxes-member"></div>
+    <!-- GRIDBOX SELLING WORDS AND IMAGES END -->
 
-      <div id="box-6-text" class="boxes-member">Work</div>
+    <!-- FOOTER START -->
 
-      <div id="box-3" class="boxes-member"></div>
-
-      <div id="box-4-text" class="boxes-member">Enjoy</div>
-
-      <div id="box-5" class="boxes-member"></div>
-      
-      <div id="box-2-text" class="boxes-member">Collaborate</div>
-    </div>
-
-</section>
-
-</main>
-
-<!-- GRIDBOX SELLING WORDS AND IMAGES END -->
-
-
-
-<!-- FOOTER START -->
-
-      <footer>
-        <div class="container">
-          <div class="grid">
-            <div class="footer-content col-12 col-md-4 col-lg-3">
-              <ul>
-                <li>You find us here</li>
-                <li>Nytorpsvagen 8 </li>
-                <li>561 73 Husqvarna</li>
-              </ul>
-            </div>
-            <div class="footer-content col-12 col-md-4 col-lg-6">
-              <ul>
-                <li>During these hours</li>
-                <li>Weekdays: 7am - 6pm </li>
-                <li>Weekends: 8am - 4pm</li>
-              </ul>
-            </div>
-            <div class="footer-content col-12 col-md-4 col-lg-3">
-              <ul>
-                <li>Or reach us online</li>
-                <li>Email: hello@gitcafe.com </li>
-                <li>Social: @gitcafe</li>
-              </ul>
-            </div>
+    <footer>
+      <div class="container">
+        <div class="grid">
+          <div class="footer-content col-12 col-md-4 col-lg-3">
+            <ul>
+              <li>You find us here</li>
+              <li>Nytorpsvagen 8</li>
+              <li>561 73 Husqvarna</li>
+            </ul>
+          </div>
+          <div class="footer-content col-12 col-md-4 col-lg-6">
+            <ul>
+              <li>During these hours</li>
+              <li>Weekdays: 7am - 6pm</li>
+              <li>Weekends: 8am - 4pm</li>
+            </ul>
+          </div>
+          <div class="footer-content col-12 col-md-4 col-lg-3">
+            <ul>
+              <li>Or reach us online</li>
+              <li>Email: hello@gitcafe.com</li>
+              <li>Social: @gitcafe</li>
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-<!-- FOOTER END -->
-
-</body>
+    <!-- FOOTER END -->
+  </body>
 </html>

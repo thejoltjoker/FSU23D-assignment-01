@@ -9,15 +9,19 @@
 
 
  .textcontainer {
-  padding: 7em;
-  
- }
+  padding: 2em;
+  margin-top: 7em;
+   }
 
 .h1member,
 .pmember {
     text-align: left;
     padding: 5px;
-    }
+   }
+
+.pmember {
+    display: none;
+   }
 
 /* **************** Header  END ******************** */
 
@@ -55,6 +59,11 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 50px;
+}
+
+.button-tablet
+{
+   display: none;
 }
 
 li {
@@ -131,9 +140,7 @@ font-size: 4rem;
   background-position: center;
 }
 
-#box-4-text {
-  
-}
+
 
 #box-5 {
   background-image: url("../img/gridbild3.jpg");
@@ -142,9 +149,7 @@ font-size: 4rem;
   background-position: center;
 }
 
-#box-6-text {
-  
-}
+
 
 
 
@@ -164,21 +169,35 @@ font-size: 4rem;
     .headerh1 {
       font-size: 4em;
     }
+
+    .pmember {
+      display:block
+     }
   
+    .textcontainer {
+      padding: 7em;
+      
+       }
+
     .headerh2,
     .headerh3 {
       font-size: 1.5em;
     }
 
     .subitemsmember {
-      max-height: 350px;
+      max-height: 400px;
       margin: 1em;
       background: rgb(19, 24, 24);
       border: 1px solid white;
       border-radius: 20px;
   }
 
-  li {
+  .button-tablet
+  {
+     align-self: center;
+  }
+
+  .li-subs {
     display: none;
   }
 
@@ -232,10 +251,15 @@ font-size: 4rem;
       border-radius: 20px;
   }
 
-    li {
+    .li-subs {
       display: list-item;
     }
 
+    .button-tablet
+    {
+     display: none;
+    }
+    
     #box-1 {
       order: 2;
       display: block;
