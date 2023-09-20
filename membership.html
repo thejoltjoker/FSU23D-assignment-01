@@ -30,21 +30,18 @@
 <body>
     
   <!-- Navbar -->
-
   <div class="grid">
     <!-- Checkbox to handle menu trigger in mobile -->
-    <input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="menu-toggle" />
     <nav>
-
       <!-- Logo-->
-      <h1 id="logo">GIT Cafe
+      <h1 id="logo"><a href="https://thejoltjoker.github.io/FSU23D-assignment-01/">GIT Cafe</a></h1>
 
-      </h1>
       <!-- Left Menu -->
       <ul class="left-menu">
-        <li><a href="">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="membership.html">Membership</a></li>
+        <li><a class="active" href="membership.html">Membership</a></li>
       </ul>
       <!-- Right menu -->
       <ul class="right-menu">
@@ -57,8 +54,8 @@
     </nav>
   </div>
 
-    <!-- Background for nav, hidden behind header-->
-    <div id="nav-bg"></div>
+  <!-- Background for nav, hidden behind header-->
+  <div id="nav-bg"></div>
 
     <header id="membership-header">
         <div class="textcontainer">
@@ -81,24 +78,25 @@
   <li>Paper & Pencil</li>
   <li>Wifi</li>
   <li>500Mb of Cloud storage</li>
+  <p class="price-membership">$19,99 / month</p>
   <button class="button-member">Subscribe</button>
 
 </ul>
-    </div>
-    <div class="subitemsmember" class="item2-color">
-      <h2 class="header-levels">Nomad</h2>
+   </div>
+   <div class="subitemsmember" class="item2-color">
+     <h2 class="header-levels">Nomad</h2>
+       <ul class="listmember">
+        <li>Freelancer benefits plus:</li>
+        <li>Online Support in any language</li>
+        <li>Complimentary DIY Coffee</li>
+        <li>Remote developer networking</li>
+        <li>Request seating in advance</li>
+        <li>2TB of Cloud Storage</li>
+        <p class="price-membership">$49,99 / month</p>
+        <button class="button-member">Subscribe</button>
 
-            <ul class="listmember">
-                <li>Freelancer benefits plus:</li>
-                <li>Online Support in any language</li>
-                <li>Complimentary DIY Coffee</li>
-                <li>Remote developer networking</li>
-                <li>Request seating in advance</li>
-                <li>2TB of Cloud Storage</li>
-                <button class="button-member">Subscribe</button>
-
-            </ul>
-      
+        </ul>
+     
     </div>
 
     
@@ -112,6 +110,7 @@
       <li>IRL Developer Networking</li>
       <li>Reserve seating in advance</li>
       <li>5TB of Cloud Storage</li>
+      <p class="price-membership">$89,99 / month</p>
       <button class="button-member">Subscribe</button>
 
         </ul>
