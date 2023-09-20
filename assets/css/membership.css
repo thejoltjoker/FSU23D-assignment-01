@@ -197,6 +197,7 @@ font-size: 4rem;
 
   .button-tablet
   {
+    display: block;
      align-self: center;
   }
 
