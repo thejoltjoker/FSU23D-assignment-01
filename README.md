@@ -20,8 +20,15 @@ Git Cafe is a simple website developed using HTML and CSS. It serves as our grou
 
 ## Collaborators
 
+We worked together to create the Home page and then split up to create one individual page each.
+
 - [Jennika Elisson](https://github.com/jennikaelisson)
+    - Responsible for About page
 - [Maria Nyström](https://github.com/marianystm)
+    - Responsible for Events page    
 - [David Törnros](https://github.com/3xyl3x)
+    - Responsible for Contact page
 - [David Lindestrand Cuenca](https://github.com/screamm)
+    - Responsible for Membership page
 - [Johannes Andersson](https://github.com/thejoltjoker)
+    - Responsible for Account page
