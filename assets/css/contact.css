@@ -1,197 +1,216 @@
+/* General styles */
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
-body {position: relative;}
 
-#map  {
+body {
+    position: relative;
+}
+
+/* Map styles */
+#map {
     text-align: center;
 }
 
 #map-holder img {
-    width: 100%;
+    width: 100%; 
     max-width: 600px;
 }
 
-
+/* Contact header styles */
 #contact-header {
     background-image: url("../img/contact-header.jpg");
     background-size: cover;
     background-position: center 20%;
     padding: var(--page-header-padding);
-  }
-  #contact-information-table {
+}
+
+/* Contact information table styles */
+#contact-information-table {
     width: 100%;
-  }
-#contact-information-table th{
+}
+
+#contact-information-table th {
     text-align: left;
     border-bottom: 2px dotted #ccc;
 }
+
 #contact-information-table th:first-child {
-    width:20px;
+    width: 20px;
 }
 
+/* Message box grid styles */
 .message-box-grid {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-}
-.message-box-grid-1{
-    grid-column:auto/ span 1;
-}
-.message-box-grid-2{
-    grid-column:auto/ span 2;
-}
-.message-box-grid-3{
-    grid-column:auto/ span 3;
-}
-.message-box-grid-4{
-    grid-column:auto/ span 4;
-}
-.message-box-grid-5{
-    grid-column:auto/ span 5;
-}
-.message-box-grid-6{
-    grid-column:auto/ span 6;
+    grid-template-columns: repeat(6, 1fr);
 }
 
+/* Message box grid column span styles */
+.message-box-grid-1 {
+    grid-column: auto / span 1;
+}
+
+.message-box-grid-2 {
+    grid-column: auto / span 2;
+}
+
+.message-box-grid-3 {
+    grid-column: auto / span 3;
+}
+
+.message-box-grid-4 {
+    grid-column: auto / span 4;
+}
+
+.message-box-grid-5 {
+    grid-column: auto / span 5;
+}
+
+.message-box-grid-6 {
+    grid-column: auto / span 6;
+}
+
+/* Responsive message box grid styles for small screens */
 @media screen and (min-width: 576px) {
-    .message-box-grid-sm-1{
-        grid-column:auto/ span 1;
-    }
-    .message-box-grid-sm-2{
-        grid-column:auto/ span 2;
-    }
-    .message-box-grid-sm-3{
-        grid-column:auto/ span 3;
-    }
-    .message-box-grid-sm-4{
-        grid-column:auto/ span 4;
-    }
-    .message-box-grid-sm-5{
-        grid-column:auto/ span 5;
-    }
-    .message-box-grid-sm-6{
-        grid-column:auto/ span 6;
+    .message-box-grid-sm-1 {
+        grid-column: auto / span 1;
     }
 
+    .message-box-grid-sm-2 {
+        grid-column: auto / span 2;
+    }
+
+    .message-box-grid-sm-3 {
+        grid-column: auto / span 3;
+    }
+
+    .message-box-grid-sm-4 {
+        grid-column: auto / span 4;
+    }
+
+    .message-box-grid-sm-5 {
+        grid-column: auto / span 5;
+    }
+
+    .message-box-grid-sm-6 {
+        grid-column: auto / span 6;
+    }
 }
 
+/* Responsive message box grid styles for medium screens */
 @media screen and (min-width: 768px) {
-    .message-box-grid-md-1{
-        grid-column:auto/ span 1;
+    .message-box-grid-md-1 {
+        grid-column: auto / span 1;
     }
-    .message-box-grid-md-2{
-        grid-column:auto/ span 2;
+
+    .message-box-grid-md-2 {
+        grid-column: auto / span 2;
     }
-    .message-box-grid-md-3{
-        grid-column:auto/ span 3;
+
+    .message-box-grid-md-3 {
+        grid-column: auto / span 3;
     }
-    .message-box-grid-md-4{
-        grid-column:auto/ span 4;
+
+    .message-box-grid-md-4 {
+        grid-column: auto / span 4;
     }
-    .message-box-grid-md-5{
-        grid-column:auto/ span 5;
+
+    .message-box-grid-md-5 {
+        grid-column: auto / span 5;
     }
-    .message-box-grid-md-6{
-        grid-column:auto/ span 6;
+
+    .message-box-grid-md-6 {
+        grid-column: auto / span 6;
     }
 }
+
+/* Contact card styles */
 .contact-card {
-    background-color: color-mix(in srgb, var(--dark-gray) 95%, white); 
+    background-color: color-mix(in srgb, var(--dark-gray) 95%, white);
     border-radius: 5px;
-  /*  border:1px solid white; */
 }
-  .totop-container {
-    position: absolute;
-    top: 0;
-    right:0;
-    height: 100%;
-  }
-  
-  .totop-container:before {
-    content: '';
-    display: block;
-    height: 100vh;
-    pointer-events: none;
-  }
-  
-  .totop-container a {
-    margin:10px;
-    opacity: 0.8;
-    position: sticky;
-    top: 88vh;
 
-  }
 
-  #workers {
+/* Workers section styles */
+#workers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     column-gap: 10px;
     row-gap: 10px;
-   
-  }
+}
 
-  #workers .worker {
-    background:color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
+#workers .worker {
+    background: color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
     flex-shrink: 1;
     border-radius: 5px;
     text-align: center;
     overflow: auto;
-
-  }
-  #workers .worker b {
-    font-size: 12px;
-  }
-
-  #workers .worker p {
-    font-size: 10px;
-  }
-
-  @media screen and (min-width: 568px)and (max-width: 768px) {
-    #workers .worker {
-    flex-basis: 40%;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    #workers {
-        flex-wrap: nowrap;
-  
-    }
-    #contact-information {
-        order:1;
-    }
-    #message-box {
-        order:2;
-    }
-    #the-people {
-        order:3;
-    }
-    #map {
-        order:4;
-    }
-  }
-@media screen and (min-width: 1140px) {
-    #message-box {
-        order:1;
-    }
-    #contact-information {
-        order:2;
-    }
-    #map {
-        order:3;
-    }
-    #the-people {
-        order:4;
-    }
-
 }
 
-  #workers .worker .worker-image-holder{
-    border-radius:50%;
+#workers .worker b,#workers .worker p {
+    font-size: var(--font-size-xs);
+}
+
+
+
+/* Set flexbasis for worker box so they will be grouped as doubles instead of 3 on one row and 1 on the second */
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    #workers .worker {
+        flex-basis: 40%;
+    }
+}
+
+/* Change order of sections on sections on large screens */
+@media screen and (min-width: 768px) {
+    #workers {
+        flex-wrap: nowrap;
+    }
+
+    #contact-information {
+        order: 1;
+    }
+
+    #message-box {
+        order: 2;
+    }
+
+    #the-people {
+        order: 3;
+    }
+
+    #map {
+        order: 4;
+    }
+}
+
+/* Change order of sections on extra-large screens */
+@media screen and (min-width: 1140px) {
+    #message-box {
+        order: 1;
+    }
+
+    #contact-information {
+        order: 2;
+    }
+
+    #map {
+        order: 3;
+    }
+
+    #the-people {
+        order: 4;
+    }
+}
+
+/* Worker image styles */
+#workers .worker .worker-image-holder {
+    border-radius: 50%;
     overflow: hidden;
     max-width: 200px;
     aspect-ratio: 1;
-  }
-  #workers .worker .worker-image-holder img{
-width: 100%;
-  }
+}
+
+#workers .worker .worker-image-holder img {
+    width: 100%;
+}
