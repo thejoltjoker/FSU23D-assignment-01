@@ -139,6 +139,13 @@ body {position: relative;}
     overflow: auto;
 
   }
+  #workers .worker b {
+    font-size: 12px;
+  }
+
+  #workers .worker p {
+    font-size: 10px;
+  }
 
   @media screen and (min-width: 568px)and (max-width: 768px) {
     #workers .worker {

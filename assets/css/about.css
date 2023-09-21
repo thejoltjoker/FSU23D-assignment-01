@@ -1,172 +1,141 @@
 #about-header {
-    background-image: url("../img/about-header.jpg");
+  background-image: url("../img/about-header.jpg");
 }
 
-#about-mobile {
-
-}
-
-/*#about-intro {
-    font-family: var(--font-heading);
-
-    grid-column: span var(--columns);
-  
-  }
-*/
 .our-story img {
-    max-width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
 }
 
-/*#story-text {
-    margin-top: auto;
-    margin-bottom: auto;
-}*/
-
-
+#story-margin {
+    margin-left: 20px;
+}
 
 .description img {
-    display: none;
-    max-width: 100%;
-    padding: 20px;
+  display: none;
+  max-width: 100%;
+  padding: 20px;
 }
 
-
-
-
-.spaces {
-
-}
-
-.spaces img {
-    max-width: 100%;
-    padding: 20px;
+.description ul {
+  padding-left: 12px;
 }
 
 .menu-text {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .menu-text img {
-    max-width: 100%;
-    padding: 20px;
+  max-width: 100%;
+  padding: 20px;
 }
 
-
-#test-test {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+#about-space {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
 }
 
-.test-box {
-    /*border: 1px plum solid;*/
-    max-width: 49%;
-    order: 0;
+.space-box {
+  max-width: 49%;
+  order: 0;
 }
 
-.test-box img {
-    max-width: 100%;
-    
+.space-box img {
+  max-width: 100%;
 }
-#dumb-child {
-    max-width: 100%;
-    /*border: lightgreen 1px solid;*/
-    order: -1;
+
+#text-space {
+  max-width: 100%;
+  order: -1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1139px) {
+  #about-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+  }
 
-    #test-test {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-/*        border: solid white 1px;*/
-    }
-    
-    .test-box {
-        /*border: 1px plum solid;*/
-        max-width: 20%;
-        order: 0;
-        
-    }
-    
-    .test-box img {
-        max-width: 100%;
-    }
-    #dumb-child {
-        max-width: 55%;
-        /*border: lightgreen 1px solid;*/
-        order: 1;
-    }
+  .space-box {
+    max-width: 20%;
+    order: 0;
+    margin-top: 10%;
+  }
 
-    .description img {
-        display: block;
-      
-    }
+  .space-box img {
+    max-width: 100%;
+  }
+  #text-space {
+    max-width: 55%;
+    order: 1;
+  }
+  
+  .description img {
+    display: block;
+  }
 
-    #desc-img {
-        display: none;
-    }
+  #desc-img {
+    display: none;
+  }
 
-    #about-gallery {
-        background-size: cover;
-        background-image: url(../img/coffee-pour.jpg);
-        background-position: center;
-    }
+  #story-margin {
+    display: none;
+    margin-right: 5%;
+    margin-top: 10%;
+    order: -1;
+  }
 
-    .description {
-        background-color: rgba(34, 46, 75, 0.697);
-        padding: 10px;
-    }
-    /*
-    #test-test {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: flex-start;
-    }*/
+  #about-gallery {
+    background-size: cover;
+    background-image: url(../img/coffee-pour.jpg);
+    background-position: center;
+  }
 
-
+  .description {
+    background-color: rgba(26, 34, 54, 0.697);
+    padding: 10px 30px;
+    border-radius: 1%;
+  }
 }
 
 @media screen and (min-width: 1140px) {
-
-
-   .description img {
+  .description img {
     display: block;
-   }
-   #desc-img {
+  }
+
+  #desc-img {
     display: block;
-}
-#test-test {
+  }
+
+  #story-margin {
+    order: 0;
+  }
+  #about-space {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-/*        border: solid white 1px;*/
-}
+  }
 
-.test-box {
-    /*border: 1px plum solid;*/
+  .space-box {
     max-width: 30%;
     order: 0;
-    
-}
+  }
 
-.test-box img {
+  .space-box img {
     max-width: 100%;
-}
-#dumb-child {
+  }
+  #text-space {
     max-width: 30%;
-    /*border: lightgreen 1px solid;*/
     order: 1;
-}
+  }
 
-#space-order {
+  #space-order {
     order: 2;
-}
-
+  }
 }
