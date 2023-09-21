@@ -36,7 +36,6 @@ h2{
 .event-card{
   
     padding: var(--padding-md);
-    /* border: solid color-mix(in srgb, var(--dark-gray) 95%, var(--almost-white)); */
     border-radius: 5%;
     display: flex;
     flex-direction: column;
