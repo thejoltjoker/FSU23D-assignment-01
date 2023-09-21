@@ -11,6 +11,8 @@
     gap: var(--padding-sm);
     padding-top: var(--padding-sm);
     padding-bottom: var(--padding-sm);
+    margin-top: var(--padding-sm);
+    margin-bottom: var(--padding-sm);
      
   }
 
@@ -41,6 +43,7 @@ h2{
     flex-direction: column;
     height: 100%;
     background: var(--footer-color); 
+    margin: var(--padding-sm);
     
    
 }
@@ -75,6 +78,7 @@ h2{
     align-items:flex-end ;
     justify-content:center;
     z-index: 1;
+    
 }
 
 .event-body{
