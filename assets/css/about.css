@@ -1,34 +1,36 @@
+@import url(variables.css);
+
 #about-header {
   background-image: url("../img/about-header.jpeg");
 }
 
 .our-story img {
   max-width: 100%;
-  margin-top: 20px;
+  margin-top: var(--padding-sm);
 }
 
 #story-margin {
-    margin-left: 20px;
+    margin-left: var(--padding-sm);
 }
 
 .description img {
   display: none;
   max-width: 100%;
-  padding: 20px;
+  padding: var(--padding-sm);
 }
 
 .description ul {
-  padding-left: 12px;
+  padding-left: var(--padding-sm);
 }
 
 .menu-text {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: var(--padding-sm);
+  padding-right: var(--padding-sm);
 }
 
 .menu-text img {
   max-width: 100%;
-  padding: 20px;
+  padding: var(--padding-sm);
 }
 
 #about-space {
@@ -36,7 +38,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 15px;
+  margin: var(--padding-sm);
 }
 
 .space-box {
@@ -59,12 +61,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
+    margin: var(--padding-md);
   }
 
   .space-box {
     max-width: 20%;
     order: 0;
-    margin-top: 10%;
+    margin-top: var(--padding-md);
   }
 
   .space-box img {
@@ -73,6 +76,11 @@
   #text-space {
     max-width: 55%;
     order: 1;
+  }
+
+  .our-story img {
+    max-width: 100%;
+    margin-top: var(--padding-md);
   }
   
   .description img {
@@ -85,8 +93,8 @@
 
   #story-margin {
     display: none;
-    margin-right: 5%;
-    margin-top: 10%;
+    margin-right: var(--padding-md);
+    margin-top: var(--padding-md);
     order: -1;
   }
 
@@ -98,7 +106,7 @@
 
   .description {
     background-color: rgba(26, 34, 54, 0.697);
-    padding: 10px 30px;
+    padding: var(--padding-sm) var(--padding-md);
     border-radius: 1%;
   }
 }
@@ -115,11 +123,13 @@
   #story-margin {
     order: 0;
   }
+
   #about-space {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: var(--padding-lg);
   }
 
   .space-box {
@@ -137,5 +147,10 @@
 
   #space-order {
     order: 2;
+  }
+
+  .our-story img {
+    max-width: 100%;
+    margin-top: var(--padding-lg);
   }
 }
