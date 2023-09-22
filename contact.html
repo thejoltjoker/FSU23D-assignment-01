@@ -70,20 +70,20 @@
         </div>
     </header>
 
-    <!-- Content -->
+
     <main id="account-main">
         <div class="container">
             <div class="grid">
-
+                <!-- SECTION -- MESSAGE FORM -- START -->
                 <section id="message-box" class="col-12 col-md-6 col-lg-5 mt-xl mb-xl">
                     <h1>Send message</h1>
                     <div class=" mt-sm contact-card p-sm">
                         <form class="message-box-grid">
-                            <div class="message-box-grid-6 message-box-grid-sm-3  pt-sm">
+                            <div class="message-box-grid-6 message-box-grid-md-3  pt-sm">
                                 <label class="" for="name-input"><b>First name:</b></label>
                                 <input type="text" id="name-input" name="firstname" placeholder="John">
                             </div>
-                            <div class="message-box-grid-6 message-box-grid-sm-3  pt-sm">
+                            <div class="message-box-grid-6 message-box-grid-md-3  pt-sm">
                                 <label class="" for="name-input"><b>Last name:</b></label>
                                 <input type="text" id="name-input" name="lastname" placeholder="Doe">
                             </div>
@@ -94,15 +94,15 @@
                             <div class="message-box-grid-6  pt-sm">
                                 <b>Subject:</b>
                             </div>
-                            <div class="message-box-grid-6 message-box-grid-sm-2">
+                            <div class="message-box-grid-6 message-box-grid-md-2">
                                 <input type="radio" id="feedback" name="subject" value="feedback" />
                                 <label for="feedback">Feedback</label>
                             </div>
-                            <div class="message-box-grid-6 message-box-grid-sm-2">
+                            <div class="message-box-grid-6 message-box-grid-md-2">
                                 <input type="radio" id="work" name="subject" value="work" />
                                 <label for="work">Work application</label>
                             </div>
-                            <div class="message-box-grid-6 message-box-grid-sm-2 ">
+                            <div class="message-box-grid-6 message-box-grid-md-2 ">
                                 <input type="radio" id="other" name="subject" value="other" checked />
                                 <label for="other">Other</label>
                             </div>
@@ -111,13 +111,14 @@
                                 <textarea id="message-input" name="message" placeholder="message"></textarea>
                             </div>
                             <div class="message-box-grid-6">
-                                <button id="send-message">Send</button>
+                                <button id="send-message" type="submit">Send</button>
                             </div>
                         </form>
 
                 </section>
+                <!-- SECTION -- MESSAGE FORM -- END -->
 
-
+                <!-- SECTION -- CONTACT INFORMATION -- START -->
                 <section id="contact-information" class="col-12 col-md-6 col-lg-3 mt-xl mb-xl">
                     <h1>Contact</h1>
                     <div class=" mt-sm contact-card p-sm">
@@ -154,8 +155,9 @@
                         </table>
                     </div>
                 </section>
+                <!-- SECTION -- CONTACT INFORMATION -- END -->
 
-
+                <!-- SECTION -- THE PEOPLE -- START -->
                 <section id="the-people" class="col-12  mt-xl mb-xl">
                     <h1>The people</h1>
 
@@ -195,18 +197,17 @@
                     </div>
 
                 </section>
+                <!-- SECTION -- THE PEOPLE -- END -->
 
 
-
-                <!-- MAP SECTION-->
+                <!-- SECTION -- MAP -- START -->
                 <section id="map" class="col-12 col-lg-4 mt-xl mb-xl">
                     <h1>Map</h1>
-
                     <div class=" mt-sm contact-card p-sm" id="map-holder">
                         <img src="assets/img/gitcafemap.png" alt="map where the git cafe is located">
                     </div>
                 </section>
-
+                <!-- SECTION -- MAP -- END -->
 
 
 
