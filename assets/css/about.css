@@ -1,9 +1,9 @@
 @import url(variables.css);
 
 #about-header {
-  background-image: url("../img/about-header.jpeg");
+  background-image: url("../img/about-header1.jpeg");
   background-size: cover;
-    background-position: center;
+  background-position: center;
 }
 
 .our-story img {
