@@ -7,25 +7,14 @@
     padding: var(--page-header-padding);
 }
 
-/* Contact card styles */
+/* Contact card style */
 .contact-card {
     background-color: color-mix(in srgb, var(--dark-gray) 95%, white);
     border-radius: 5px;
 }
 
-/* Contact information table styles */
-#contact-information-table {
-    width: 100%;
-}
+/* ### SECTION STYLES ### */
 
-#contact-information-table th {
-    text-align: left;
-    border-bottom: 2px dotted #ccc;
-}
-
-#contact-information-table th:first-child {
-    width: 20px;
-}
 
 /* Message box grid styles */
 .message-box-grid {
@@ -58,35 +47,103 @@
     grid-column: auto / span 6;
 }
 
-/* Responsive message box grid styles for small screens */
-@media screen and (min-width: 576px) {
-    .message-box-grid-sm-1 {
-        grid-column: auto / span 1;
-    }
 
-    .message-box-grid-sm-2 {
-        grid-column: auto / span 2;
-    }
-
-    .message-box-grid-sm-3 {
-        grid-column: auto / span 3;
-    }
-
-    .message-box-grid-sm-4 {
-        grid-column: auto / span 4;
-    }
-
-    .message-box-grid-sm-5 {
-        grid-column: auto / span 5;
-    }
-
-    .message-box-grid-sm-6 {
-        grid-column: auto / span 6;
-    }
+/* Contact information table styles */
+#contact-information-table {
+    width: 100%;
 }
 
-/* Responsive message box grid styles for medium screens */
+#contact-information-table th {
+    text-align: left;
+    border-bottom: 2px dotted #ccc;
+}
+
+#contact-information-table th:first-child {
+    width: 20px;
+}
+
+
+/* The people section styles */
+#the-people-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#the-people-flex .person {
+    background: color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
+    flex-shrink: 1;
+    border-radius: 5px;
+    text-align: center;
+    overflow: auto;
+}
+
+#the-people-flex .person  {
+    font-size: var(--font-size-xs);
+}
+.person-image-holder {
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 200px;
+    aspect-ratio: 1;
+}
+
+.person-image-holder img {
+    width: 100%;
+    transition: 1s ease;
+}
+        
+.person-image-holder img:hover{
+    transform: scale(1.1);
+    cursor: crosshair;
+}
+
+/* Map styles */
+#map {
+    text-align: center;
+}
+
+#map-holder img {
+    width: 100%; 
+    max-width: 600px;
+}
+
+
+/* Small screens */
+@media screen and (min-width: 568px)  {
+    /* Set flexbasis for worker box so they will be grouped as doubles instead of 3 on one row and 1 on the second */
+    #the-people-flex .person {
+        flex-basis: 40%;
+    }
+
+}
+
+/* Medium screens / Tablets */
 @media screen and (min-width: 768px) {
+    #contact-information {
+        order: 1;
+    }
+
+    #message-box {
+        order: 2;
+    }
+
+    #the-people {
+        order: 3;
+    }
+    #the-people-flex {
+        flex-wrap: nowrap;
+    }
+    #the-people-flex .person {
+        flex-basis: auto;
+    }
+
+    #map {
+        order: 4;
+    }
+
     .message-box-grid-md-1 {
         grid-column: auto / span 1;
     }
@@ -112,87 +169,7 @@
     }
 }
 
-
-
-/* The people section styles */
-#the-people-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    column-gap: 10px;
-    row-gap: 10px;
-}
-
-#the-people-flex .person {
-    background: color-mix(in srgb, var(--dark-gray) 50%, var(--almost-black));
-    flex-shrink: 1;
-    border-radius: 5px;
-    text-align: center;
-    overflow: auto;
-}
-
-#the-people-flex .person  {
-    font-size: var(--font-size-xs);
-}
-/*The people image styles */
-.the-people-image-holder {
-    border-radius: 50%;
-    overflow: hidden;
-    max-width: 200px;
-    aspect-ratio: 1;
-}
-
-.the-people-image-holder img {
-    width: 100%;
-    transition: 1s ease;
-        }
-        
-  .the-people-image-holder img:hover{
-            transform: scale(1.1);
-            cursor: crosshair;
-    }
-
-/* Map styles */
-#map {
-    text-align: center;
-}
-
-#map-holder img {
-    width: 100%; 
-    max-width: 600px;
-}
-
-
-/* Set flexbasis for worker box so they will be grouped as doubles instead of 3 on one row and 1 on the second */
-@media screen and (min-width: 568px) and (max-width: 768px) {
-    #the-people-flex .person {
-        flex-basis: 40%;
-    }
-}
-
-/* Change order of sections on sections on large screens */
-@media screen and (min-width: 768px) {
-    #contact-information {
-        order: 1;
-    }
-
-    #message-box {
-        order: 2;
-    }
-
-    #the-people {
-        order: 3;
-    }
-    #the-people-flex {
-        flex-wrap: nowrap;
-    }
-
-    #map {
-        order: 4;
-    }
-}
-
-/* Change order of sections on extra-large screens */
+/* Large screens / Computers */
 @media screen and (min-width: 1140px) {
     #message-box {
         order: 1;
